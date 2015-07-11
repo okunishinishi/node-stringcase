@@ -1,14 +1,16 @@
 How to
 -------
 
-### usage
+### Usage
 
 
 ```Javascript
-var stringcase = require('stringcase');
-{{#each usages}}{{#each samples}}stringcase.{{../name}}('{{src}}'); // => "{{converted}}" 
+var sc = require('stringcase');
+{{#each usages}}{{#each samples}}sc.{{../name}}('{{src}}'); // => "{{converted}}" 
 {{/each}}{{/each}}
 ```
+
+Fore more detail, see [API Guide][my_lib_apiguide_url]
 
 
 ### Install

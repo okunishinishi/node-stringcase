@@ -88,7 +88,7 @@
 <!-- Table start -->
 <h2>Table of Contents</h2><ul>
 <li><a href="#01-howto">How to</a><ul>
-<li><a href="#01-howto-usage">usage</a></li>
+<li><a href="#01-howto--usage">Usage</a></li>
 <li><a href="#01-howto--install">Install</a></li>
 </ul>
 </li>
@@ -108,24 +108,25 @@
 <!-- Table end -->
 <!-- Sections start -->
 <p><a name="01-howto"></a></p>
-<h2>How to</h2><p><a name="01-howto-usage"></a></p>
-<h3>usage</h3><pre class="prettyprint source lang-Javascript"><code>var stringcase = require('stringcase');
-stringcase.camelcase('foo_bar_baz'); // => &quot;fooBarBaz&quot; 
-stringcase.camelcase('FooBarBaz'); // => &quot;fooBarBaz&quot; 
-stringcase.capitalcase('foo_bar_baz'); // => &quot;Foo_bar_baz&quot; 
-stringcase.capitalcase('FooBarBaz'); // => &quot;FooBarBaz&quot; 
-stringcase.lowercase('foo_bar_baz'); // => &quot;foo_bar_baz&quot; 
-stringcase.lowercase('FooBarBaz'); // => &quot;foobarbaz&quot; 
-stringcase.pascalcase('foo_bar_baz'); // => &quot;FooBarBaz&quot; 
-stringcase.pascalcase('FooBarBaz'); // => &quot;FooBarBaz&quot; 
-stringcase.sentencecase('foo_bar_baz'); // => &quot;Foo bar baz&quot; 
-stringcase.sentencecase('FooBarBaz'); // => &quot;Foo bar baz&quot; 
-stringcase.snakecase('foo_bar_baz'); // => &quot;foo_bar_baz&quot; 
-stringcase.snakecase('FooBarBaz'); // => &quot;_foo_bar_baz&quot; 
-stringcase.spinalcase('foo_bar_baz'); // => &quot;foo-bar-baz&quot; 
-stringcase.spinalcase('FooBarBaz'); // => &quot;-foo-bar-baz&quot; 
-stringcase.uppercase('foo_bar_baz'); // => &quot;FOO_BAR_BAZ&quot; 
-stringcase.uppercase('FooBarBaz'); // => &quot;FOOBARBAZ&quot;</code></pre><p><a name="01-howto--install"></a></p>
+<h2>How to</h2><p><a name="01-howto--usage"></a></p>
+<h3>Usage</h3><pre class="prettyprint source lang-Javascript"><code>var sc = require('stringcase');
+sc.camelcase('foo_bar_baz'); // => &quot;fooBarBaz&quot; 
+sc.camelcase('FooBarBaz'); // => &quot;fooBarBaz&quot; 
+sc.capitalcase('foo_bar_baz'); // => &quot;Foo_bar_baz&quot; 
+sc.capitalcase('FooBarBaz'); // => &quot;FooBarBaz&quot; 
+sc.lowercase('foo_bar_baz'); // => &quot;foo_bar_baz&quot; 
+sc.lowercase('FooBarBaz'); // => &quot;foobarbaz&quot; 
+sc.pascalcase('foo_bar_baz'); // => &quot;FooBarBaz&quot; 
+sc.pascalcase('FooBarBaz'); // => &quot;FooBarBaz&quot; 
+sc.sentencecase('foo_bar_baz'); // => &quot;Foo bar baz&quot; 
+sc.sentencecase('FooBarBaz'); // => &quot;Foo bar baz&quot; 
+sc.snakecase('foo_bar_baz'); // => &quot;foo_bar_baz&quot; 
+sc.snakecase('FooBarBaz'); // => &quot;_foo_bar_baz&quot; 
+sc.spinalcase('foo_bar_baz'); // => &quot;foo-bar-baz&quot; 
+sc.spinalcase('FooBarBaz'); // => &quot;-foo-bar-baz&quot; 
+sc.uppercase('foo_bar_baz'); // => &quot;FOO_BAR_BAZ&quot; 
+sc.uppercase('FooBarBaz'); // => &quot;FOOBARBAZ&quot;</code></pre><p>Fore more detail, see <a href="http://okunishinishi.github.io/stringcase/apiguide/module-stringcase_lib.html">API Guide</a></p>
+<p><a name="01-howto--install"></a></p>
 <h3>Install</h3><pre class="prettyprint source"><code>$ npm install stringcase --save</code></pre><p><a name="09-links"></a></p>
 <h2>Links</h2><p><a name="09-links--website"></a></p>
 <h3>Website</h3><ul>

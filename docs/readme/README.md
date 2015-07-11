@@ -20,7 +20,7 @@ Convert string cases between camel case, pascal case, snake case etc...
 Table of Contents
 -----
 - [How to](#01-howto)
-    - [usage](#01-howto-usage)
+    - [Usage](#01-howto--usage)
     - [Install](#01-howto--install)
 - [Links](#09-links)
     - [Website](#09-links--website)
@@ -40,30 +40,32 @@ Table of Contents
 How to
 -------
 
-<a name="01-howto-usage"></a>
-### usage
+<a name="01-howto--usage"></a>
+### Usage
 
 
 ```Javascript
-var stringcase = require('stringcase');
-stringcase.camelcase('foo_bar_baz'); // => "fooBarBaz" 
-stringcase.camelcase('FooBarBaz'); // => "fooBarBaz" 
-stringcase.capitalcase('foo_bar_baz'); // => "Foo_bar_baz" 
-stringcase.capitalcase('FooBarBaz'); // => "FooBarBaz" 
-stringcase.lowercase('foo_bar_baz'); // => "foo_bar_baz" 
-stringcase.lowercase('FooBarBaz'); // => "foobarbaz" 
-stringcase.pascalcase('foo_bar_baz'); // => "FooBarBaz" 
-stringcase.pascalcase('FooBarBaz'); // => "FooBarBaz" 
-stringcase.sentencecase('foo_bar_baz'); // => "Foo bar baz" 
-stringcase.sentencecase('FooBarBaz'); // => "Foo bar baz" 
-stringcase.snakecase('foo_bar_baz'); // => "foo_bar_baz" 
-stringcase.snakecase('FooBarBaz'); // => "_foo_bar_baz" 
-stringcase.spinalcase('foo_bar_baz'); // => "foo-bar-baz" 
-stringcase.spinalcase('FooBarBaz'); // => "-foo-bar-baz" 
-stringcase.uppercase('foo_bar_baz'); // => "FOO_BAR_BAZ" 
-stringcase.uppercase('FooBarBaz'); // => "FOOBARBAZ" 
+var sc = require('stringcase');
+sc.camelcase('foo_bar_baz'); // => "fooBarBaz" 
+sc.camelcase('FooBarBaz'); // => "fooBarBaz" 
+sc.capitalcase('foo_bar_baz'); // => "Foo_bar_baz" 
+sc.capitalcase('FooBarBaz'); // => "FooBarBaz" 
+sc.lowercase('foo_bar_baz'); // => "foo_bar_baz" 
+sc.lowercase('FooBarBaz'); // => "foobarbaz" 
+sc.pascalcase('foo_bar_baz'); // => "FooBarBaz" 
+sc.pascalcase('FooBarBaz'); // => "FooBarBaz" 
+sc.sentencecase('foo_bar_baz'); // => "Foo bar baz" 
+sc.sentencecase('FooBarBaz'); // => "Foo bar baz" 
+sc.snakecase('foo_bar_baz'); // => "foo_bar_baz" 
+sc.snakecase('FooBarBaz'); // => "_foo_bar_baz" 
+sc.spinalcase('foo_bar_baz'); // => "foo-bar-baz" 
+sc.spinalcase('FooBarBaz'); // => "-foo-bar-baz" 
+sc.uppercase('foo_bar_baz'); // => "FOO_BAR_BAZ" 
+sc.uppercase('FooBarBaz'); // => "FOOBARBAZ" 
 
 ```
+
+Fore more detail, see [API Guide][my_lib_apiguide_url]
 
 
 <a name="01-howto--install"></a>
@@ -140,6 +142,7 @@ Support this project and [others by okunishinishi][my_gratipay_url] via [gratipa
 [my_codeclimate_badge_url]: http://img.shields.io/codeclimate/github/okunishinishi/stringcase.svg?style=flat
 [my_codeclimate_coverage_badge_url]: http://img.shields.io/codeclimate/coverage/github/okunishinishi/stringcase.svg?style=flat
 [my_apiguide_url]: http://okunishinishi.github.io/stringcase/apiguide/module-stringcase.html
+[my_lib_apiguide_url]: http://okunishinishi.github.io/stringcase/apiguide/module-stringcase_lib.html
 [my_coverage_url]: http://okunishinishi.github.io/stringcase/coverage/lcov-report
 [my_coverage_report_url]: http://okunishinishi.github.io/stringcase/coverage/lcov-report/
 [my_gratipay_url]: https://gratipay.com/okunishinishi/
