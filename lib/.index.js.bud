@@ -1,0 +1,14 @@
+"use strict";
+
+var coz = require('coz'),
+    indexJsBud = coz.factory.indexJsBud;
+
+module.exports = indexJsBud({
+    dirname: __dirname,
+    desc: 'String manipulate functions.',
+    module: 'stringcase/lib'
+});
+
+if (!module.parent) {
+    coz.render(__filename);
+}
