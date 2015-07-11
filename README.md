@@ -156,3 +156,7 @@ Support this project and [others by okunishinishi][my_gratipay_url] via [gratipa
 
 <!-- Links end-->
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/okunishinishi/stringcase/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
