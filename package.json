@@ -25,7 +25,10 @@
     "pascal",
     "snake"
   ],
-  "author": "Taka Okunishi",
+  "author": {
+    "name": "Taka Okunishi",
+    "url": "http://okunishitaka.com"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/okunishinishi/stringcase/issues"

@@ -1,0 +1,24 @@
+{
+  "tags": {
+    "allowUnknownTags": true
+  },
+  "plugins": ["plugins/markdown"],
+  "templates": {
+    "cleverLinks": false,
+    "monospaceLinks": false,
+    "outputSourceFiles": true,
+    "systemName": "stringcase",
+    "footer": "<script>var h=document.head;h.innerHTML=h.innerHTML+'<link rel=\"shortcut icon\" href=\"../../assets/images/coz-favicon.png\"/><style>.navbar .navbar-inner{  background-image: none;background-color: rgba(250, 250, 250, 0.9);} .navbar .dropdown-menu{border-radius:4px; width:auto; max-height:500px;  background-color: rgba(42, 42, 42, 0.91);} a{color:#00AAC1;background-color:transparent !important;} a:hover{color:#00AAC1;} .nav-pills > li > a{padding:4px 8px;} .nav > li > a:hover, .nav > li > a:focus{text-decoration: underline;} #toc .toc-active{background-color:#00AAC1;} #toc .toc-active a:hover{cursor:default; text-decoration:none;} .navbar .nav > li > a:focus, .navbar .nav > li > a:hover, .navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle{color:#00AAC1;} .navbar .nav li.dropdown > a:hover .caret, .navbar .nav li.dropdown > a:focus .caret{border-top-color:#00AAC1 !important; border-bottom-color:#00AAC1 !important;} .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-submenu:hover > a, .dropdown-submenu:focus > a{background-image:none;background-color:#00AAC1 !important;} .sunlight-menu{display:none;} .navbar .dropdown-menu a{padding: 2px 4px;}</style>';</script>",
+    "copyright": "okunishitaka.com Copyright © 2015",
+    "navType": "vertical",
+    "theme": "spacelab",
+    "linenums": true,
+    "collapseSymbols": false,
+    "dateFormat": "YYYY-MM-DD",
+    "inverseNav": false
+  },
+  "markdown": {
+    "parser": "gfm",
+    "hardwrap": true
+  }
+}

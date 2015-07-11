@@ -1,0 +1,14 @@
+/**
+ * @overview {{pkg.description}}
+ * @version {{pkg.version}}
+ * @module {{pkg.name}}
+ * @author {@link {{pkg.author.url}}|{{pkg.author.name}}{{{END_BRACE}}}
+ * @license {@link {{pkg.license}}|{{links.my_license_url}}{{{END_BRACE}}}
+ * @see {{pkg.homepage}}
+{{#each pkg.dependencies}} * @requires {@link https://www.npmjs.org/package/{{@key}}|{{@key}}@{{{@this}}}{{{../END_BRACE}}}
+{{/each}}
+ */
+
+"use strict";
+
+module.exports = require('./lib');

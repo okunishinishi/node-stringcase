@@ -1,0 +1,124 @@
+"use strict";
+
+var coz = require('coz'),
+    path = coz.core.path,
+    glob = coz.ext.glob,
+    format = coz.core.util.format,
+    async = coz.ext.async,
+    string = require('../../lib'),
+    fs = coz.core.fs;
+
+var pkg = require('../../package.json'),
+    HandlebarsEngine = require('coz/lib/template/buildin_engines').HandlebarsEngine;
+
+var engine = new HandlebarsEngine({});
+
+var BANNER_SIZE = 128;
+
+
+function _section(filename, callback) {
+    async.waterfall([
+        function (callback) {
+            fs.readFile(filename, callback);
+        },
+        function (content, callback) {
+            engine.compile(String(content), callback);
+        },
+        function (tmpl, callback) {
+            if (!tmpl) {
+                callback(null, null);
+                return;
+            }
+            callback(null, {
+                name: path.basename(filename, path.extname(filename)),
+                content: tmpl({
+                    BANNER_SIZE: BANNER_SIZE,
+                    pkg: pkg,
+                    get usages() {
+                        return Object.keys(string)
+                            .filter(function (name) {
+                                return /case$/.test(name);
+                            })
+                            .map(function (name) {
+                                var convert = string[name];
+                                return {
+                                    name: name,
+                                    samples: [
+                                        'foo_bar_baz',
+                                        'FooBarBaz'
+                                    ].map(function (src) {
+                                            return {
+                                                src: src,
+                                                converted: convert(src)
+
+                                            }
+                                        })
+                                }
+                            });
+                    }
+                }),
+                get lines() {
+                    return this.content.split('\n').map(function (content) {
+                        return {
+                            content: content,
+                            isTopic: content.match(/^###[^#]/),
+                            name: content.replace(/[#\?'"]/g, '').trim(),
+                            title: content.replace(/^#+/g, '').trim()
+                        }
+                    });
+                },
+                get title() {
+                    return this.lines.shift().content.trim();
+                },
+                get topics() {
+                    return this.lines.filter(function (line) {
+                        return line.isTopic;
+                    })
+                }
+
+            });
+        }
+    ], callback);
+}
+
+
+function _sections(dirname, callback) {
+    async.waterfall([
+        function (callback) {
+            fs.readdir(dirname, callback);
+        },
+        function (filenames, callback) {
+            async.map(filenames.sort(), function (filename, callback) {
+                _section(path.resolve(dirname, filename), callback);
+            }, callback);
+        }
+    ], callback);
+}
+
+
+module.exports = function (callback) {
+    async.waterfall([
+        function (callback) {
+            var dirname = path.resolve(__dirname, 'sections');
+            _sections(dirname, callback);
+        },
+        function (sections) {
+            callback(null, {
+                force: true,
+                mode: '444',
+                data: {
+                    pkg: pkg,
+                    BANNER_SIZE: BANNER_SIZE,
+                    links: require('./.links.json'),
+                    badges: require('./.badges.json'),
+                    banners: require('./.banners.json'),
+                    sections: sections
+                }
+            });
+        }
+    ], callback);
+};
+
+if (!module.parent) {
+    require('../../lib').render(__filename);
+}

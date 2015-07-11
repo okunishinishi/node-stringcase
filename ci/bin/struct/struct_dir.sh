@@ -21,6 +21,8 @@ mkdir -p ci/bin/tag
 mkdir -p ci/bin/test
 mkdir -p docs
 mkdir -p docs/reports
+mkdir -p docs/readme
+mkdir -p docs/readme/sections
 mkdir -p lib
 mkdir -p test
 mkdir -p test/unit_tests

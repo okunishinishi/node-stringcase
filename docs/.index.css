@@ -1,0 +1,46 @@
+body {
+    padding: 50px;
+    color: #666;
+    font-family: sans-serif;
+    font-weight: 100 !important;
+    font-size: 24px;
+}
+
+.container {
+    max-width: 960px;
+    position: relative;
+    margin: 0 auto;
+}
+
+a {
+    color: #00AAC1;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header h1 {
+}
+
+article {
+    max-width: 640px;
+}
+
+th, td {
+    padding: 2px 4px;
+}
+
+footer {
+    padding: 10px 4px;
+    border-top: 1px solid #F5F5F5;
+    margin: 40px 10px 0;
+    color: #999;
+}
+
+footer .nav-item {
+    display: inline-block;
+    margin: 0 10px;
+}
