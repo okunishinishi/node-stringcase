@@ -11,3 +11,6 @@ script:
 - "./ci/bin/test.sh"
 - "./ci/bin/cover.sh"
 - "./ci/bin/report.sh"
+env:
+  global:
+    secure: SiReZY/iBp3uXoUFGrRIUfHI/Dz61Lc7kwxocTd2hWtLpRvWFuCwJ/qGvLUl2y4nLsMCNYXWQ97Ta4BpKaYGGvOcFgA5ELpEwVFTUOPfk1BSSuKbEHMnWLB5+cJ4Xa9JcCyhjd7TgDoGmR4wBy3fxwztlZGPvQMMc+jwvc25rmo7fJExscQJxdNHknUhRRgKH7J7727qeY0gGhfzV2V41to5OZTiFYiVGmEyNLJVs/Igdh7Ji8ePqQ+Ma7P+CRBHU2d2iQXsveTPgCNWYe6FnhoWtiL46U/lT62ZiIuv0K89ej2PMrW1wcg1IZlA+6z2HJRp12jATE36IVBsVkVfEUXLbeo3ZqZVxQmlm1t2mi0p2obQvI94sHqZOrzWyBz3OAhaPTC5vqPly9NMN9cwHjICql+c0FvZ5PWJ0lpa4HAH79TNg0xg/ylOG3L/GLEL2Fhywaw6qmjQUVL21vBGvaHzoZ6vs1pcZwEh4j2noB5hD0GbA5GtqRVQDu9FweN0ZFX/xrUWkC6qSrdqx6/g5ipHQqhsCCCc5D+0Wyi7eFck4gI/u+C90ZNzrnn6/cIrg14sykFIA35P4oxetA5Cb1K5Z+jkN62DvAwXFIZvO+lTB9VbytjkI+BFQQd8GwSmAeLG5WkvaGSVP6HZGu+pWXoAZexcQVcryri8rDeMMHA=
