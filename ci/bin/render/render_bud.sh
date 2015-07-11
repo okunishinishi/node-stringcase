@@ -11,4 +11,5 @@ cd ${BASE_DIR}
 
 npm run render -- docs/**/.*.bud
 npm run render -- docs/.*.bud
+npm run render -- lib/.*.bud
 npm run render -- .*.bud
