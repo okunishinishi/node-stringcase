@@ -141,14 +141,14 @@ Support this project and [others by okunishinishi][my_gratipay_url] via [gratipa
 [npm_url]: https://www.npmjs.com/
 [nvm_url]: https://github.com/creationix/nvm
 [bitdeli_url]: https://bitdeli.com/free
-[my_bitdeli_badge_url]: https://d2weczhvl823v0.cloudfront.net/okunishinishi/stringcase/trend.png
-[my_repo_url]: https://github.com/okunishinishi/stringcase
-[my_travis_url]: http://travis-ci.org/okunishinishi/stringcase
-[my_travis_badge_url]: http://img.shields.io/travis/okunishinishi/stringcase.svg?style=flat
-[my_license_url]: https://github.com/okunishinishi/stringcase/blob/master/LICENSE
-[my_codeclimate_url]: http://codeclimate.com/github/okunishinishi/stringcase
-[my_codeclimate_badge_url]: http://img.shields.io/codeclimate/github/okunishinishi/stringcase.svg?style=flat
-[my_codeclimate_coverage_badge_url]: http://img.shields.io/codeclimate/coverage/github/okunishinishi/stringcase.svg?style=flat
+[my_bitdeli_badge_url]: https://d2weczhvl823v0.cloudfront.net/okunishinishi/node-stringcase/trend.png
+[my_repo_url]: https://github.com/okunishinishi/node-stringcase
+[my_travis_url]: http://travis-ci.org/okunishinishi/node-stringcase
+[my_travis_badge_url]: http://img.shields.io/travis/okunishinishi/node-stringcase.svg?style=flat
+[my_license_url]: https://github.com/okunishinishi/node-stringcase/blob/master/LICENSE
+[my_codeclimate_url]: http://codeclimate.com/github/okunishinishi/node-stringcase
+[my_codeclimate_badge_url]: http://img.shields.io/codeclimate/github/okunishinishi/node-stringcase.svg?style=flat
+[my_codeclimate_coverage_badge_url]: http://img.shields.io/codeclimate/coverage/github/okunishinishi/node-stringcase.svg?style=flat
 [my_apiguide_url]: http://okunishinishi.github.io/stringcase/apiguide/module-stringcase.html
 [my_lib_apiguide_url]: http://okunishinishi.github.io/stringcase/apiguide/module-stringcase_lib.html
 [my_coverage_url]: http://okunishinishi.github.io/stringcase/coverage/lcov-report
@@ -157,10 +157,10 @@ Support this project and [others by okunishinishi][my_gratipay_url] via [gratipa
 [my_gratipay_budge_url]: http://img.shields.io/gratipay/okunishinishi.svg?style=flat
 [my_npm_url]: http://www.npmjs.org/package/stringcase
 [my_npm_budge_url]: http://img.shields.io/npm/v/stringcase.svg?style=flat
-[my_tag_url]: http://github.com/okunishinishi/stringcase/releases/tag/
-[my_tag_badge_url]: http://img.shields.io/github/tag/okunishinishi/stringcase.svg?style=flat
-[my_gemnasium_url]: http://gemnasium.com/okunishinishi/stringcase
-[my_gemnasium_badge_url]: http://img.shields.io/gemnasium/okunishinishi/stringcase.svg?style=flat
+[my_tag_url]: http://github.com/okunishinishi/node-stringcase/releases/tag/
+[my_tag_badge_url]: http://img.shields.io/github/tag/okunishinishi/node-stringcase.svg?style=flat
+[my_gemnasium_url]: http://gemnasium.com/okunishinishi/node-stringcase
+[my_gemnasium_badge_url]: http://img.shields.io/gemnasium/okunishinishi/node-stringcase.svg?style=flat
 
 <!-- Links end-->
 
