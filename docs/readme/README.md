@@ -1,7 +1,7 @@
 stringcase
 =====
 
-Convert string cases.
+Convert string cases between camel case, pascal case, snake case etc...
 
 <!-- Badge start -->
 
