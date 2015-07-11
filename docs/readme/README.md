@@ -73,7 +73,7 @@ sc.uppercase('FooBarBaz'); // => "FOOBARBAZ"
 
 ```
 
-Fore more detail, see [API Guide][my_lib_apiguide_url]
+Fore more detail, see [API Guide of stringcase functions][my_lib_apiguide_url].
 
 
 <a name="01-howto--install"></a>

@@ -9,7 +9,4 @@ BASE_DIR=$(cd "${HERE}/../../.." && pwd)
 
 cd ${BASE_DIR}
 
-npm run render -- docs/**/.*.bud
-npm run render -- docs/.*.bud
-npm run render -- lib/.*.bud
-npm run render -- .*.bud
+npm run render -- docs/**/.*.bud docs/.*.bud lib/.*.bud .*.bud
