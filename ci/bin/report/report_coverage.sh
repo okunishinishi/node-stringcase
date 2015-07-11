@@ -9,4 +9,4 @@ BASE_DIR=$(cd "${HERE}/../../.." && pwd)
 
 cd ${BASE_DIR}
 
-npm run report -- < ${BASE_DIR}/docs/coverage/lcov.info
+npm run report -- < ${BASE_DIR}/docs/reports/coverage/lcov.info

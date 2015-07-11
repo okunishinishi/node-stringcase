@@ -8,7 +8,6 @@
 
 
 var filename = require.resolve('../../../package.json'),
-    async = require('async'),
     fs = require('fs');
 
 function _incrementVersion(version) {
