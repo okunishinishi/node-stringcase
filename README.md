@@ -90,7 +90,7 @@ Links
 <a name="09-links--website"></a>
 ### Website
 
-+ [stringcase](https://github.com/okunishinishi/stringcase#readme)
++ [stringcase](https://github.com/okunishinishi/node-stringcase#readme)
 + [stringcase @npm][my_npm_url]
 + [stringcase @github][my_repo_url]
 
@@ -105,7 +105,7 @@ Links
 
 + [Build Status @travis][my_travis_url]
 + [Analysis Result @codeclimate][my_codeclimate_url]
-+ [Issues @github](https://github.com/okunishinishi/stringcase/issues)
++ [Issues @github](https://github.com/okunishinishi/node-stringcase/issues)
 + [Coverage Report][my_coverage_url]
 
 <a name="10-license"></a>

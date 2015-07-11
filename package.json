@@ -1,45 +1,45 @@
 {
-  "name": "stringcase",
-  "version": "1.0.3",
-  "description": "Convert string cases between camel case, pascal case, snake case etc...",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs",
-    "test": "test"
-  },
-  "scripts": {
-    "unittest": "nodeunit",
-    "cover": "istanbul cover nodeunit",
-    "report": "codeclimate",
-    "apiguide": "jsdoc",
-    "render": "coz render"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/okunishinishi/node-stringcase.git"
-  },
-  "keywords": [
-    "string",
-    "case",
-    "camel",
-    "pascal",
-    "snake"
-  ],
-  "author": {
-    "name": "Taka Okunishi",
-    "url": "http://okunishitaka.com"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/okunishinishi/node-stringcase/issues"
-  },
-  "homepage": "https://github.com/okunishinishi/node-stringcase#readme",
-  "devDependencies": {
-    "coz": "^1.0.20",
-    "nodeunit": "^0.9.1",
-    "codeclimate-test-reporter": "0.0.4",
-    "ink-docstrap": "^0.4.12",
-    "istanbul": "^0.3.14",
-    "jsdoc": "^3.3.0"
-  }
+    "name": "stringcase",
+    "version": "1.0.4",
+    "description": "Convert string cases between camel case, pascal case, snake case etc...",
+    "main": "index.js",
+    "directories": {
+        "doc": "docs",
+        "test": "test"
+    },
+    "scripts": {
+        "unittest": "nodeunit",
+        "cover": "istanbul cover nodeunit",
+        "report": "codeclimate",
+        "apiguide": "jsdoc",
+        "render": "coz render"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/okunishinishi/node-stringcase.git"
+    },
+    "keywords": [
+        "string",
+        "case",
+        "camel",
+        "pascal",
+        "snake"
+    ],
+    "author": {
+        "name": "Taka Okunishi",
+        "url": "http://okunishitaka.com"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/okunishinishi/node-stringcase/issues"
+    },
+    "homepage": "https://github.com/okunishinishi/node-stringcase#readme",
+    "devDependencies": {
+        "coz": "^1.0.20",
+        "nodeunit": "^0.9.1",
+        "codeclimate-test-reporter": "0.0.4",
+        "ink-docstrap": "^0.4.12",
+        "istanbul": "^0.3.14",
+        "jsdoc": "^3.3.0"
+    }
 }
