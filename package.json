@@ -10,7 +10,7 @@
     "scripts": {
         "unittest": "nodeunit",
         "cover": "istanbul cover nodeunit",
-        "report": "codeclimate",
+      "report": "codeclimate-test-reporter",
         "apiguide": "jsdoc",
         "render": "coz render"
     },
@@ -37,7 +37,7 @@
     "devDependencies": {
         "coz": "^1.0.20",
         "nodeunit": "^0.9.1",
-        "codeclimate-test-reporter": "0.0.4",
+      "codeclimate-test-reporter": "0.1.0",
         "ink-docstrap": "^0.4.12",
         "istanbul": "^0.3.14",
         "jsdoc": "^3.3.0"
