@@ -109,31 +109,31 @@
 <!-- Sections start -->
 <p><a name="01-howto"></a></p>
 <h2>How to</h2><p><a name="01-howto--usage"></a></p>
-<h3>Usage</h3><pre class="prettyprint source lang-Javascript"><code>var sc = require('stringcase');
-sc.camelcase('foo_bar_baz'); // => &quot;fooBarBaz&quot; 
-sc.camelcase('FooBarBaz'); // => &quot;fooBarBaz&quot; 
-sc.capitalcase('foo_bar_baz'); // => &quot;Foo_bar_baz&quot; 
-sc.capitalcase('FooBarBaz'); // => &quot;FooBarBaz&quot; 
-sc.constcase('foo_bar_baz'); // => &quot;FOO_BAR_BAZ&quot; 
-sc.constcase('FooBarBaz'); // => &quot;_FOO_BAR_BAZ&quot; 
-sc.lowercase('foo_bar_baz'); // => &quot;foo_bar_baz&quot; 
-sc.lowercase('FooBarBaz'); // => &quot;foobarbaz&quot; 
-sc.pascalcase('foo_bar_baz'); // => &quot;FooBarBaz&quot; 
-sc.pascalcase('FooBarBaz'); // => &quot;FooBarBaz&quot; 
-sc.pathcase('foo_bar_baz'); // => &quot;foo/bar/baz&quot; 
-sc.pathcase('FooBarBaz'); // => &quot;/foo/bar/baz&quot; 
-sc.sentencecase('foo_bar_baz'); // => &quot;Foo bar baz&quot; 
-sc.sentencecase('FooBarBaz'); // => &quot;Foo bar baz&quot; 
-sc.snakecase('foo_bar_baz'); // => &quot;foo_bar_baz&quot; 
-sc.snakecase('FooBarBaz'); // => &quot;_foo_bar_baz&quot; 
-sc.spinalcase('foo_bar_baz'); // => &quot;foo-bar-baz&quot; 
-sc.spinalcase('FooBarBaz'); // => &quot;-foo-bar-baz&quot; 
-sc.titlecase('foo_bar_baz'); // => &quot;Foo Bar Baz&quot; 
-sc.titlecase('FooBarBaz'); // => &quot; Foo Bar Baz&quot; 
-sc.trimcase('foo_bar_baz'); // => &quot;foo_bar_baz&quot; 
-sc.trimcase('FooBarBaz'); // => &quot;FooBarBaz&quot; 
-sc.uppercase('foo_bar_baz'); // => &quot;FOO_BAR_BAZ&quot; 
-sc.uppercase('FooBarBaz'); // => &quot;FOOBARBAZ&quot;</code></pre><p>Fore more detail, see <a href="http://okunishinishi.github.io/stringcase/apiguide/module-stringcase_lib.html">API Guide of stringcase functions</a>.</p>
+<h3>Usage</h3><pre class="prettyprint source lang-Javascript"><code>var stringcase = require('stringcase');
+stringcase.camelcase('foo_bar_baz'); // => &quot;fooBarBaz&quot; 
+stringcase.camelcase('FooBarBaz'); // => &quot;fooBarBaz&quot; 
+stringcase.capitalcase('foo_bar_baz'); // => &quot;Foo_bar_baz&quot; 
+stringcase.capitalcase('FooBarBaz'); // => &quot;FooBarBaz&quot; 
+stringcase.constcase('foo_bar_baz'); // => &quot;FOO_BAR_BAZ&quot; 
+stringcase.constcase('FooBarBaz'); // => &quot;_FOO_BAR_BAZ&quot; 
+stringcase.lowercase('foo_bar_baz'); // => &quot;foo_bar_baz&quot; 
+stringcase.lowercase('FooBarBaz'); // => &quot;foobarbaz&quot; 
+stringcase.pascalcase('foo_bar_baz'); // => &quot;FooBarBaz&quot; 
+stringcase.pascalcase('FooBarBaz'); // => &quot;FooBarBaz&quot; 
+stringcase.pathcase('foo_bar_baz'); // => &quot;foo/bar/baz&quot; 
+stringcase.pathcase('FooBarBaz'); // => &quot;/foo/bar/baz&quot; 
+stringcase.sentencecase('foo_bar_baz'); // => &quot;Foo bar baz&quot; 
+stringcase.sentencecase('FooBarBaz'); // => &quot;Foo bar baz&quot; 
+stringcase.snakecase('foo_bar_baz'); // => &quot;foo_bar_baz&quot; 
+stringcase.snakecase('FooBarBaz'); // => &quot;_foo_bar_baz&quot; 
+stringcase.spinalcase('foo_bar_baz'); // => &quot;foo-bar-baz&quot; 
+stringcase.spinalcase('FooBarBaz'); // => &quot;-foo-bar-baz&quot; 
+stringcase.titlecase('foo_bar_baz'); // => &quot;Foo Bar Baz&quot; 
+stringcase.titlecase('FooBarBaz'); // => &quot; Foo Bar Baz&quot; 
+stringcase.trimcase('foo_bar_baz'); // => &quot;foo_bar_baz&quot; 
+stringcase.trimcase('FooBarBaz'); // => &quot;FooBarBaz&quot; 
+stringcase.uppercase('foo_bar_baz'); // => &quot;FOO_BAR_BAZ&quot; 
+stringcase.uppercase('FooBarBaz'); // => &quot;FOOBARBAZ&quot;</code></pre><p>Fore more detail, see <a href="http://okunishinishi.github.io/stringcase/apiguide/module-stringcase_lib.html">API Guide of stringcase functions</a>.</p>
 <p><a name="01-howto--install"></a></p>
 <h3>Install</h3><pre class="prettyprint source"><code>$ npm install stringcase --save</code></pre><p><a name="09-links"></a></p>
 <h2>Links</h2><p><a name="09-links--website"></a></p>

@@ -5,8 +5,8 @@ How to
 
 
 ```Javascript
-var sc = require('stringcase');
-{{#each usages}}{{#each samples}}sc.{{../name}}('{{src}}'); // => "{{converted}}" 
+var stringcase = require('stringcase');
+{{#each usages}}{{#each samples}}stringcase.{{../name}}('{{src}}'); // => "{{converted}}" 
 {{/each}}{{/each}}
 ```
 
