@@ -18,8 +18,8 @@ case ${answer:0:1} in
         bash ./ci/bin/test.sh
         bash ./ci/bin/cover.sh
         bash ./ci/bin/doc.sh
-        bash ./ci/bin/deploy.sh
         npm run versionup
+        npm run taggit
         npm publish .
         node ./ci/bin/tag/tag_git.js
         git add . -A

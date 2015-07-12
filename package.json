@@ -13,7 +13,8 @@
     "report": "codeclimate-test-reporter",
     "apiguide": "jsdoc",
     "render": "coz render",
-    "versionup": "versionup"
+    "versionup": "versionup",
+    "taggit": "taggit"
   },
   "repository": {
     "type": "git",
@@ -36,12 +37,13 @@
   },
   "homepage": "https://github.com/okunishinishi/node-stringcase#readme",
   "devDependencies": {
-    "coz": "^1.0.20",
+    "coz": "^1.0.24",
     "nodeunit": "^0.9.1",
     "codeclimate-test-reporter": "0.1.0",
     "ink-docstrap": "^0.4.12",
     "istanbul": "^0.3.14",
     "jsdoc": "^3.3.0",
-    "versionup": "^1.0.4"
+    "taggit": "^1.0.3",
+    "versionup": "^1.0.7"
   }
 }
