@@ -19,7 +19,7 @@ case ${answer:0:1} in
         bash ./ci/bin/cover.sh
         bash ./ci/bin/doc.sh
         bash ./ci/bin/deploy.sh
-        node ./ci/bin/version/versionup.js
+        npm run versionup
         npm publish .
         node ./ci/bin/tag/tag_git.js
         git add . -A
