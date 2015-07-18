@@ -1,6 +1,6 @@
 {
   "name": "stringcase",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Convert string cases between camel case, pascal case, snake case etc...",
   "main": "index.js",
   "directories": {

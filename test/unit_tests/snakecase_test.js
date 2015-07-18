@@ -9,6 +9,7 @@ var snakecase = require('../../lib/snakecase.js');
 
 
 exports['Convert to camel case.'] = function (test) {
+    test.equal(snakecase('FooBar'), 'foo_bar');
     test.equal(snakecase('fooBar'), 'foo_bar');
     test.equal(snakecase('foo_bar'), 'foo_bar');
     test.equal(snakecase('foo-bar'), 'foo_bar');
