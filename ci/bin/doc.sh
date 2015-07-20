@@ -10,4 +10,4 @@ BASE_DIR=$(cd "${HERE}/../.." && pwd)
 cd ${BASE_DIR}
 
 bash ./ci/bin/doc/doc_readme.sh
-bash ./ci/bin/doc/doc_apiguide.sh
+node ./ci/bin/doc/doc_apiguide.js
