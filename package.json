@@ -1,6 +1,6 @@
 {
   "name": "stringcase",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Convert string cases between camel case, pascal case, snake case etc...",
   "main": "index.js",
   "directories": {
@@ -37,12 +37,11 @@
   },
   "homepage": "https://github.com/okunishinishi/node-stringcase#readme",
   "devDependencies": {
-    "coz": "^1.0.24",
+    "apiguide": "^1.0.5",
+    "coz": "^1.2.5",
     "nodeunit": "^0.9.1",
     "codeclimate-test-reporter": "0.1.0",
-    "ink-docstrap": "^0.4.12",
     "istanbul": "^0.3.14",
-    "jsdoc": "^3.3.0",
     "taggit": "^1.0.3",
     "versionup": "^1.0.7"
   }

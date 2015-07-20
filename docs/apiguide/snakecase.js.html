@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>stringcase Modules</title>
+	<title>stringcase Source: snakecase.js</title>
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -41,94 +41,53 @@
 <div class="row">
 
 	
-	<div class="col-md-8">
+	<div class="col-md-12">
 	
 		<div id="main">
-    		<h1 class="page-title">Modules</h1>
+    		<h1 class="page-title">Source: snakecase.js</h1>
 			
 
-	<h1 class="page-title">Modules</h1>
+		<h1 class="page-title">Source: snakecase.js</h1>
+    
 <section>
+	<article>
+		<pre
+			class="sunlight-highlight-javascript linenums">/**
+ * Convert string into snake case.
+ * Join punctuation with underscore.
+ * @memberof module:stringcase/lib
+ * @function snakecase
+ * @param {string} str - String to convert.
+ * @returns {string} Snake cased string.
+ */
 
-<header>
-    
-        <h2>
-        
-        </h2>
-        
-    
-</header>
+"use strict";
 
+var lowercase = require('./lowercase');
 
-<article>
-    <div class="container-overview">
-    
-        
+var JOINER = '_';
 
-        
-<dl class="details">
-	
+var replacing = {
+    from: /([A-Z])/g,
+    to: function ($1) {
+        return JOINER + lowercase($1)
+    }
+};
 
-	
+/** @lends snakecase */
+function snakecase(str) {
+    str = String(str).replace(/[\-\.\s]/g, JOINER);
+    if (!str) {
+        return str;
+    }
+    return lowercase(str[0]) + str.slice(1).replace(replacing.from, replacing.to);
+}
 
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-        
-    
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</article>
-
+module.exports = snakecase;
+</pre>
+	</article>
 </section>
+
 
 
 
@@ -138,10 +97,6 @@
 
 	<div class="clearfix"></div>
 
-	
-		<div class="col-md-3">
-			<div id="toc" class="col-md-3"></div>
-		</div>
 	
 
 </div>

@@ -20,16 +20,16 @@ Convert string cases between camel case, pascal case, snake case etc...
 Table of Contents
 -----
 - [How to](#01-howto)
-    - [Usage](#01-howto--usage)
-    - [Install](#01-howto--install)
+    - [Usage](#01-howto-usage)
+    - [Install](#01-howto-install)
 - [Links](#09-links)
-    - [Website](#09-links--website)
-    - [Documents](#09-links--documents)
-    - [Reports](#09-links--reports)
+    - [Website](#09-links-website)
+    - [Documents](#09-links-documents)
+    - [Reports](#09-links-reports)
 - [License](#10-license)
 - [About this project](#11-project)
-    - [Author](#11-project--author)
-    - [Donation](#11-project--donation)
+    - [Author](#11-project-author)
+    - [Donation](#11-project-donation)
 
 <!-- Table end -->
 
@@ -40,7 +40,7 @@ Table of Contents
 How to
 -------
 
-<a name="01-howto--usage"></a>
+<a name="01-howto-usage"></a>
 ### Usage
 
 
@@ -76,7 +76,7 @@ stringcase.uppercase('FooBarBaz'); // => "FOOBARBAZ"
 Fore more detail, see [API Guide of stringcase functions][my_lib_apiguide_url].
 
 
-<a name="01-howto--install"></a>
+<a name="01-howto-install"></a>
 ### Install
 
 ```
@@ -87,7 +87,7 @@ $ npm install stringcase --save
 Links
 ------
 
-<a name="09-links--website"></a>
+<a name="09-links-website"></a>
 ### Website
 
 + [stringcase](https://github.com/okunishinishi/node-stringcase#readme)
@@ -95,12 +95,12 @@ Links
 + [stringcase @github][my_repo_url]
 
 
-<a name="09-links--documents"></a>
+<a name="09-links-documents"></a>
 ### Documents
 
 + [API Guide][my_apiguide_url]
 
-<a name="09-links--reports"></a>
+<a name="09-links-reports"></a>
 ### Reports
 
 + [Build Status @travis][my_travis_url]
@@ -119,12 +119,12 @@ About this project
 
 [![Bitdeli Badge][my_bitdeli_badge_url]][bitdeli_url]
 
-<a name="11-project--author"></a>
+<a name="11-project-author"></a>
 ### Author
 
 + [Taka Okunishi](http://okunishitaka.com)
 
-<a name="11-project--donation"></a>
+<a name="11-project-donation"></a>
 ### Donation
 
 Support this project and [others by okunishinishi][my_gratipay_url] via [gratipay][my_gratipay_url].

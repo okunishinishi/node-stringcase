@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>stringcase Modules</title>
+	<title>stringcase Source: uppercase.js</title>
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -41,94 +41,40 @@
 <div class="row">
 
 	
-	<div class="col-md-8">
+	<div class="col-md-12">
 	
 		<div id="main">
-    		<h1 class="page-title">Modules</h1>
+    		<h1 class="page-title">Source: uppercase.js</h1>
 			
 
-	<h1 class="page-title">Modules</h1>
+		<h1 class="page-title">Source: uppercase.js</h1>
+    
 <section>
+	<article>
+		<pre
+			class="sunlight-highlight-javascript linenums">/**
+ * Convert string into upper case.
+ * @memberof module:stringcase/lib
+ * @function uppercase
+ * @param {string} str - String to convert.
+ * @returns {string} Upper case string.
+ */
 
-<header>
-    
-        <h2>
-        
-        </h2>
-        
-    
-</header>
+"use strict";
 
+/** @lends uppercase */
+function uppercase(str) {
+    str = String(str);
+    if (!str) {
+        return str;
+    }
+    return str.toUpperCase();
+}
 
-<article>
-    <div class="container-overview">
-    
-        
-
-        
-<dl class="details">
-	
-
-	
-
-	
-
-	
-
-    
-
-    
-
-    
-
-    
-
-	
-
-	
-
-	
-
-	
-
-	
-
-
-
-	
-
-	
-
-	
-
-	
-</dl>
-
-
-        
-    
-    </div>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</article>
-
+module.exports = uppercase;</pre>
+	</article>
 </section>
+
 
 
 
@@ -138,10 +84,6 @@
 
 	<div class="clearfix"></div>
 
-	
-		<div class="col-md-3">
-			<div id="toc" class="col-md-3"></div>
-		</div>
 	
 
 </div>

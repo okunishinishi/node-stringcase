@@ -1,6 +1,6 @@
 /**
  * @overview Convert string cases between camel case, pascal case, snake case etc...
- * @version 1.0.6
+ * @version 1.0.7
  * @module stringcase
  * @author {@link http://okunishitaka.com|Taka Okunishi}
  * @license {@link MIT|https://github.com/okunishinishi/node-stringcase/blob/master/LICENSE}
