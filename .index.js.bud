@@ -10,8 +10,7 @@ module.exports = {
     mode: '444',
     data: {
         END_BRACE: '}',
-        pkg: require('./package.json'),
-        links: require('./docs/readme/.links.json')
+        pkg: require('./package.json')
     }
 };
 

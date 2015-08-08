@@ -77,6 +77,9 @@ h4.name {
   padding: 20px; }
   .navbar .dropdown-menu a {
     padding: 2px 4px; }
+  .navbar .dropdown-menu a,
+  .navbar .dropdown-menu a:visited {
+    color: #BBB; }
 
 .nav li a[href="#toc1"] {
   display: none; }

@@ -70,97 +70,49 @@
 
 
     <section class="readme-section">
-        <article><h1>stringcase</h1><p>Convert string cases between camel case, pascal case, snake case etc...</p>
-<!-- Badge start -->
+        <article><h1>stringcase</h1><!-- Badge Start -->
+<p><a name="badges"></a></p>
 <p><a href="http://travis-ci.org/okunishinishi/node-stringcase"><img src="http://img.shields.io/travis/okunishinishi/node-stringcase.svg?style=flat" alt="Build Status"></a>
 <a href="http://codeclimate.com/github/okunishinishi/node-stringcase"><img src="http://img.shields.io/codeclimate/github/okunishinishi/node-stringcase.svg?style=flat" alt="Code Climate"></a>
 <a href="http://codeclimate.com/github/okunishinishi/node-stringcase"><img src="http://img.shields.io/codeclimate/coverage/github/okunishinishi/node-stringcase.svg?style=flat" alt="Code Coverage"></a>
-<a href="http://gemnasium.com/okunishinishi/node-stringcase"><img src="http://img.shields.io/gemnasium/okunishinishi/node-stringcase.svg?style=flat" alt="dependencies"></a>
-<a href="http://www.npmjs.org/package/stringcase"><img src="http://img.shields.io/npm/v/stringcase.svg?style=flat" alt="npm version"></a>
-<a href="https://gratipay.com/okunishinishi/"><img src="http://img.shields.io/gratipay/okunishinishi.svg?style=flat" alt="Gratipay"></a></p>
-<!-- Badge end -->
-<!-- Table start -->
-<h2>Table of Contents</h2><ul>
-<li><a href="#01-howto">How to</a><ul>
-<li><a href="#01-howto--usage">Usage</a></li>
-<li><a href="#01-howto--install">Install</a></li>
-</ul>
-</li>
-<li><a href="#09-links">Links</a><ul>
-<li><a href="#09-links--website">Website</a></li>
-<li><a href="#09-links--documents">Documents</a></li>
-<li><a href="#09-links--reports">Reports</a></li>
-</ul>
-</li>
-<li><a href="#10-license">License</a></li>
-<li><a href="#11-project">About this project</a><ul>
-<li><a href="#11-project--author">Author</a></li>
-<li><a href="#11-project--donation">Donation</a></li>
-</ul>
-</li>
-</ul>
-<!-- Table end -->
-<!-- Sections start -->
-<p><a name="01-howto"></a></p>
-<h2>How to</h2><p><a name="01-howto--usage"></a></p>
-<h3>Usage</h3><pre class="prettyprint source lang-Javascript"><code>var stringcase = require('stringcase');
-stringcase.camelcase('foo_bar_baz'); // => &quot;fooBarBaz&quot; 
-stringcase.camelcase('FooBarBaz'); // => &quot;fooBarBaz&quot; 
-stringcase.capitalcase('foo_bar_baz'); // => &quot;Foo_bar_baz&quot; 
-stringcase.capitalcase('FooBarBaz'); // => &quot;FooBarBaz&quot; 
-stringcase.constcase('foo_bar_baz'); // => &quot;FOO_BAR_BAZ&quot; 
-stringcase.constcase('FooBarBaz'); // => &quot;FOO_BAR_BAZ&quot; 
-stringcase.lowercase('foo_bar_baz'); // => &quot;foo_bar_baz&quot; 
-stringcase.lowercase('FooBarBaz'); // => &quot;foobarbaz&quot; 
-stringcase.pascalcase('foo_bar_baz'); // => &quot;FooBarBaz&quot; 
-stringcase.pascalcase('FooBarBaz'); // => &quot;FooBarBaz&quot; 
-stringcase.pathcase('foo_bar_baz'); // => &quot;foo/bar/baz&quot; 
-stringcase.pathcase('FooBarBaz'); // => &quot;foo/bar/baz&quot; 
-stringcase.sentencecase('foo_bar_baz'); // => &quot;Foo bar baz&quot; 
-stringcase.sentencecase('FooBarBaz'); // => &quot;Foo bar baz&quot; 
-stringcase.snakecase('foo_bar_baz'); // => &quot;foo_bar_baz&quot; 
-stringcase.snakecase('FooBarBaz'); // => &quot;foo_bar_baz&quot; 
-stringcase.spinalcase('foo_bar_baz'); // => &quot;foo-bar-baz&quot; 
-stringcase.spinalcase('FooBarBaz'); // => &quot;foo-bar-baz&quot; 
-stringcase.titlecase('foo_bar_baz'); // => &quot;Foo Bar Baz&quot; 
-stringcase.titlecase('FooBarBaz'); // => &quot;Foo Bar Baz&quot; 
-stringcase.trimcase('foo_bar_baz'); // => &quot;foo_bar_baz&quot; 
-stringcase.trimcase('FooBarBaz'); // => &quot;FooBarBaz&quot; 
-stringcase.uppercase('foo_bar_baz'); // => &quot;FOO_BAR_BAZ&quot; 
-stringcase.uppercase('FooBarBaz'); // => &quot;FOOBARBAZ&quot;</code></pre><p>Fore more detail, see <a href="http://okunishinishi.github.io/stringcase/apiguide/module-stringcase_lib.html">API Guide of stringcase functions</a>.</p>
-<p><a name="01-howto--install"></a></p>
-<h3>Install</h3><pre class="prettyprint source"><code>$ npm install stringcase --save</code></pre><p><a name="09-links"></a></p>
-<h2>Links</h2><p><a name="09-links--website"></a></p>
-<h3>Website</h3><ul>
-<li><a href="https://github.com/okunishinishi/node-stringcase#readme">stringcase</a></li>
-<li><a href="http://www.npmjs.org/package/stringcase">stringcase @npm</a></li>
-<li><a href="https://github.com/okunishinishi/node-stringcase">stringcase @github</a></li>
-</ul>
-<p><a name="09-links--documents"></a></p>
-<h3>Documents</h3><ul>
-<li><a href="http://okunishinishi.github.io/stringcase/apiguide/module-stringcase.html">API Guide</a></li>
-</ul>
-<p><a name="09-links--reports"></a></p>
-<h3>Reports</h3><ul>
-<li><a href="http://travis-ci.org/okunishinishi/node-stringcase">Build Status @travis</a></li>
-<li><a href="http://codeclimate.com/github/okunishinishi/node-stringcase">Analysis Result @codeclimate</a></li>
-<li><a href="https://github.com/okunishinishi/node-stringcase/issues">Issues @github</a></li>
-<li><a href="http://okunishinishi.github.io/stringcase/coverage/lcov-report">Coverage Report</a></li>
-</ul>
-<p><a name="10-license"></a></p>
+<a href="http://www.npmjs.org/package/stringcase"><img src="http://img.shields.io/npm/v/stringcase.svg?style=flat" alt="npm Version"></a></p>
+<!-- Badge End -->
+<!-- Description Start -->
+<p><a name="description"></a></p>
+<p>Convert string cases between camel case, pascal case, snake case etc...</p>
+<!-- Description End -->
+<!-- Sections Start -->
+<p><a name="sections"></a></p>
+<h2>Usage</h2><pre class="prettyprint source lang-Javascript"><code>var stringcase = require('stringcase');
+stringcase.camelcase('foo_bar_baz'); // => &quot;fooBarBaz&quot;
+stringcase.camelcase('FooBarBaz'); // => &quot;fooBarBaz&quot;
+stringcase.capitalcase('foo_bar_baz'); // => &quot;Foo_bar_baz&quot;
+stringcase.capitalcase('FooBarBaz'); // => &quot;FooBarBaz&quot;
+stringcase.constcase('foo_bar_baz'); // => &quot;FOO_BAR_BAZ&quot;
+stringcase.constcase('FooBarBaz'); // => &quot;FOO_BAR_BAZ&quot;
+stringcase.lowercase('foo_bar_baz'); // => &quot;foo_bar_baz&quot;
+stringcase.lowercase('FooBarBaz'); // => &quot;foobarbaz&quot;
+stringcase.pascalcase('foo_bar_baz'); // => &quot;FooBarBaz&quot;
+stringcase.pascalcase('FooBarBaz'); // => &quot;FooBarBaz&quot;
+stringcase.pathcase('foo_bar_baz'); // => &quot;foo/bar/baz&quot;
+stringcase.pathcase('FooBarBaz'); // => &quot;foo/bar/baz&quot;
+stringcase.sentencecase('foo_bar_baz'); // => &quot;Foo bar baz&quot;
+stringcase.sentencecase('FooBarBaz'); // => &quot;Foo bar baz&quot;
+stringcase.snakecase('foo_bar_baz'); // => &quot;foo_bar_baz&quot;
+stringcase.snakecase('FooBarBaz'); // => &quot;foo_bar_baz&quot;
+stringcase.spinalcase('foo_bar_baz'); // => &quot;foo-bar-baz&quot;
+stringcase.spinalcase('FooBarBaz'); // => &quot;foo-bar-baz&quot;
+stringcase.titlecase('foo_bar_baz'); // => &quot;Foo Bar Baz&quot;
+stringcase.titlecase('FooBarBaz'); // => &quot;Foo Bar Baz&quot;
+stringcase.trimcase('foo_bar_baz'); // => &quot;foo_bar_baz&quot;
+stringcase.trimcase('FooBarBaz'); // => &quot;FooBarBaz&quot;
+stringcase.uppercase('foo_bar_baz'); // => &quot;FOO_BAR_BAZ&quot;
+stringcase.uppercase('FooBarBaz'); // => &quot;FOOBARBAZ&quot;</code></pre><p>Fore more detail, see <a href="http://okunishinishi.github.io/node-stringcase/apiguide/module-stringcase_lib.html">API Guide of stringcase functions</a>.</p>
+<!-- Sections Start -->
+<!-- LICENSE Start -->
+<p><a name="license"></a></p>
 <h2>License</h2><p>This software is released under the <a href="https://github.com/okunishinishi/node-stringcase/blob/master/LICENSE">MIT License</a>.</p>
-<p><a name="11-project"></a></p>
-<h2>About this project</h2><p><a href="https://bitdeli.com/free"><img src="https://d2weczhvl823v0.cloudfront.net/okunishinishi/node-stringcase/trend.png" alt="Bitdeli Badge"></a></p>
-<p><a name="11-project--author"></a></p>
-<h3>Author</h3><ul>
-<li><a href="http://okunishitaka.com">Taka Okunishi</a></li>
-</ul>
-<p><a name="11-project--donation"></a></p>
-<h3>Donation</h3><p>Support this project and <a href="https://gratipay.com/okunishinishi/">others by okunishinishi</a> via <a href="https://gratipay.com/okunishinishi/">gratipay</a>.</p>
-<p><a href="https://gratipay.com/okunishinishi/"><img src="https://cdn.rawgit.com/gratipay/gratipay-badge/2.3.0/dist/gratipay.svg" alt="Support via Gratipay"/></a></p>
-<!-- Sections end -->
-<!-- Links start -->
-<!-- Links end--></article>
+<!-- LICENSE End --></article>
     </section>
 
 
@@ -190,9 +142,14 @@ stringcase.uppercase('FooBarBaz'); // => &quot;FOOBARBAZ&quot;</code></pre><p>Fo
 	<br />
 
 
+	<span class="copyright">
+	okunishitaka.com Copyright © 2015
+	</span>
+	<br />
+
 <span class="jsdoc-message">
 	Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.2</a>
-	on 2015-07-20 using the <a
+	on 2015-08-08 using the <a
 	href="https://github.com/terryweiss/docstrap">DocStrap template</a>.
 </span>
 </footer>

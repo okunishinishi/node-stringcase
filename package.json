@@ -1,20 +1,13 @@
 {
   "name": "stringcase",
-  "version": "1.0.8",
+  "version": "1.1.1",
   "description": "Convert string cases between camel case, pascal case, snake case etc...",
   "main": "index.js",
-  "directories": {
-    "doc": "docs",
-    "test": "test"
-  },
   "scripts": {
-    "unittest": "nodeunit",
-    "cover": "istanbul cover nodeunit",
-    "report": "codeclimate-test-reporter",
-    "apiguide": "jsdoc",
-    "render": "coz render",
-    "versionup": "versionup",
-    "taggit": "taggit"
+    "build": "./ci/build.js",
+    "test": "./ci/test.js",
+    "cover": "./ci/cover.js",
+    "report": "./ci/report.js"
   },
   "repository": {
     "type": "git",
@@ -37,12 +30,15 @@
   },
   "homepage": "https://github.com/okunishinishi/node-stringcase#readme",
   "devDependencies": {
+    "ape-covering": "^1.0.8",
+    "ape-deploying": "^1.0.8",
+    "ape-releasing": "^1.0.14",
+    "ape-reporting": "^1.0.8",
+    "ape-tasking": "^1.0.6",
+    "ape-testing": "^1.1.6",
+    "ape-tmpl": "^1.0.3",
+    "ape-updating": "^1.0.1",
     "apiguide": "^1.0.5",
-    "coz": "^1.2.5",
-    "nodeunit": "^0.9.1",
-    "codeclimate-test-reporter": "0.1.0",
-    "istanbul": "^0.3.14",
-    "taggit": "^1.0.3",
-    "versionup": "^1.0.7"
+    "coz": "^1.5.0"
   }
 }

@@ -1,0 +1,40 @@
+/**
+ * Bud file for example usage.
+ */
+
+"use strict";
+
+var stringcase = require('../../lib');
+
+module.exports = {
+    force: true,
+    mode: '444',
+    data: {
+        get usages() {
+            return Object.keys(stringcase)
+                .filter(function (name) {
+                    return /case$/.test(name);
+                })
+                .map(function (name) {
+                    var convert = stringcase[name];
+                    return {
+                        name: name,
+                        samples: [
+                            'foo_bar_baz',
+                            'FooBarBaz'
+                        ].map(function (src) {
+                                return {
+                                    src: src,
+                                    converted: convert(src)
+
+                                }
+                            })
+                    }
+                });
+        }
+    }
+};
+
+if (!module.parent) {
+    require('coz').render(__filename);
+}

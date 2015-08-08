@@ -1,0 +1,3 @@
+var stringcase = require('stringcase');
+{{#each usages}}{{#each samples}}stringcase.{{../name}}('{{src}}'); // => "{{converted}}"
+{{/each}}{{/each}}
