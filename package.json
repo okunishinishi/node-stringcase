@@ -1,6 +1,6 @@
 {
   "name": "stringcase",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Convert string cases between camel case, pascal case, snake case etc...",
   "main": "index.js",
   "scripts": {
@@ -38,7 +38,8 @@
     "ape-testing": "^1.1.6",
     "ape-tmpl": "^1.0.3",
     "ape-updating": "^1.0.1",
-    "apiguide": "^1.0.5",
+    "apiguide": "^1.0.8",
     "coz": "^1.5.0"
-  }
+  },
+  "dependencies": {}
 }

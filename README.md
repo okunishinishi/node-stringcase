@@ -77,6 +77,15 @@ stringcase.constcase('FooBarBaz'); // => "FOO_BAR_BAZ"
 
 
 //------------------------
+// Convert to decapitalcase
+//------------------------
+stringcase.decapitalcase('foo_bar_baz'); // => "foo_bar_baz"
+stringcase.decapitalcase('FOO_BAR_BAZ'); // => "fOO_BAR_BAZ"
+stringcase.decapitalcase('fooBarBaz'); // => "fooBarBaz"
+stringcase.decapitalcase('FooBarBaz'); // => "fooBarBaz"
+
+
+//------------------------
 // Convert to lowercase
 //------------------------
 stringcase.lowercase('foo_bar_baz'); // => "foo_bar_baz"

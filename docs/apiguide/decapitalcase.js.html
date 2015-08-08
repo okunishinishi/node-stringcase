@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>stringcase Source: trimcase.js</title>
+	<title>stringcase Source: decapitalcase.js</title>
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -44,30 +44,38 @@
 	<div class="col-md-12">
 	
 		<div id="main">
-    		<h1 class="page-title">Source: trimcase.js</h1>
+    		<h1 class="page-title">Source: decapitalcase.js</h1>
 			
 
-		<h1 class="page-title">Source: trimcase.js</h1>
+		<h1 class="page-title">Source: decapitalcase.js</h1>
     
 <section>
 	<article>
 		<pre
 			class="sunlight-highlight-javascript linenums">/**
- * Convert string into trimmed string.
+ * Convert string into de-capitalized case.
+ * First letters will be lowercase.
  * @memberof module:stringcase/lib
- * @function trimcase
+ * @function decapitalcase
  * @param {string} str - String to convert.
- * @returns {string} Trimmed case string.
+ * @returns {string} Capital case string.
  */
 
 "use strict";
 
-/** @lends trimcase */
-function trimcase(str) {
-    return String(str).trim();
+var lowercase = require('./lowercase');
+
+
+/** @lends capitalcase */
+function capitalcase(str) {
+    str = String(str);
+    if (!str) {
+        return str;
+    }
+    return lowercase(str[0]) + str.slice(1);
 }
 
-module.exports = trimcase;</pre>
+module.exports = capitalcase;</pre>
 	</article>
 </section>
 

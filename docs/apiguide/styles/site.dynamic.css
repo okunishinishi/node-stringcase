@@ -57,6 +57,7 @@ h4.name {
   font-weight: bold;
   font-size: 23px; }
 
+#main .page-title:nth-child(2),
 #main .page-title:nth-child(3) {
   display: none; }
 
