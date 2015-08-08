@@ -85,3 +85,7 @@ This software is released under the [MIT License](https://github.com/okunishinis
 <!-- LICENSE End -->
 
 
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/okunishinishi/stringcase/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
