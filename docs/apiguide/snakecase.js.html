@@ -80,7 +80,7 @@ function snakecase(str) {
     if (!str) {
         return str;
     }
-    return lowercase(str[0]) + str.slice(1).replace(replacing.from, replacing.to);
+    return lowercase(str[0]) + str.slice(1).replace(replacing.from, replacing.to).replace(/_+/g, '_');
 }
 
 module.exports = snakecase;

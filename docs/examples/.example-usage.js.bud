@@ -21,6 +21,8 @@ module.exports = {
                         name: name,
                         samples: [
                             'foo_bar_baz',
+                            'FOO_BAR_BAZ',
+                            'fooBarBaz',
                             'FooBarBaz'
                         ].map(function (src) {
                                 return {

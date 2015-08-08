@@ -66,7 +66,7 @@ var lowercase = require('./lowercase'),
     uppercase = require('./uppercase');
 
 var replacing = {
-    from: /[\-_\.\s]([a-z])/g,
+    from: /[\-_\.\s]([a-zA-Z])/g,
     to: function (a, b) {
         return uppercase(b);
     }

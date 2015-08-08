@@ -84,29 +84,112 @@
 <!-- Sections Start -->
 <p><a name="sections"></a></p>
 <h2>Installation</h2><pre class="prettyprint source lang-bash"><code>npm install stringcase --save-dev</code></pre><h2>Usage</h2><pre class="prettyprint source lang-Javascript"><code>var stringcase = require('stringcase');
+
+//------------------------
+// Convert to camelcase
+//------------------------
 stringcase.camelcase('foo_bar_baz'); // => &quot;fooBarBaz&quot;
+stringcase.camelcase('FOO_BAR_BAZ'); // => &quot;fOOBARBAZ&quot;
+stringcase.camelcase('fooBarBaz'); // => &quot;fooBarBaz&quot;
 stringcase.camelcase('FooBarBaz'); // => &quot;fooBarBaz&quot;
+
+
+//------------------------
+// Convert to capitalcase
+//------------------------
 stringcase.capitalcase('foo_bar_baz'); // => &quot;Foo_bar_baz&quot;
+stringcase.capitalcase('FOO_BAR_BAZ'); // => &quot;FOO_BAR_BAZ&quot;
+stringcase.capitalcase('fooBarBaz'); // => &quot;FooBarBaz&quot;
 stringcase.capitalcase('FooBarBaz'); // => &quot;FooBarBaz&quot;
+
+
+//------------------------
+// Convert to constcase
+//------------------------
 stringcase.constcase('foo_bar_baz'); // => &quot;FOO_BAR_BAZ&quot;
+stringcase.constcase('FOO_BAR_BAZ'); // => &quot;F_O_O_B_A_R_B_A_Z&quot;
+stringcase.constcase('fooBarBaz'); // => &quot;FOO_BAR_BAZ&quot;
 stringcase.constcase('FooBarBaz'); // => &quot;FOO_BAR_BAZ&quot;
+
+
+//------------------------
+// Convert to lowercase
+//------------------------
 stringcase.lowercase('foo_bar_baz'); // => &quot;foo_bar_baz&quot;
+stringcase.lowercase('FOO_BAR_BAZ'); // => &quot;foo_bar_baz&quot;
+stringcase.lowercase('fooBarBaz'); // => &quot;foobarbaz&quot;
 stringcase.lowercase('FooBarBaz'); // => &quot;foobarbaz&quot;
+
+
+//------------------------
+// Convert to pascalcase
+//------------------------
 stringcase.pascalcase('foo_bar_baz'); // => &quot;FooBarBaz&quot;
+stringcase.pascalcase('FOO_BAR_BAZ'); // => &quot;FOOBARBAZ&quot;
+stringcase.pascalcase('fooBarBaz'); // => &quot;FooBarBaz&quot;
 stringcase.pascalcase('FooBarBaz'); // => &quot;FooBarBaz&quot;
+
+
+//------------------------
+// Convert to pathcase
+//------------------------
 stringcase.pathcase('foo_bar_baz'); // => &quot;foo/bar/baz&quot;
+stringcase.pathcase('FOO_BAR_BAZ'); // => &quot;f/o/o/b/a/r/b/a/z&quot;
+stringcase.pathcase('fooBarBaz'); // => &quot;foo/bar/baz&quot;
 stringcase.pathcase('FooBarBaz'); // => &quot;foo/bar/baz&quot;
+
+
+//------------------------
+// Convert to sentencecase
+//------------------------
 stringcase.sentencecase('foo_bar_baz'); // => &quot;Foo bar baz&quot;
+stringcase.sentencecase('FOO_BAR_BAZ'); // => &quot;F o o  b a r  b a z&quot;
+stringcase.sentencecase('fooBarBaz'); // => &quot;Foo bar baz&quot;
 stringcase.sentencecase('FooBarBaz'); // => &quot;Foo bar baz&quot;
+
+
+//------------------------
+// Convert to snakecase
+//------------------------
 stringcase.snakecase('foo_bar_baz'); // => &quot;foo_bar_baz&quot;
+stringcase.snakecase('FOO_BAR_BAZ'); // => &quot;f_o_o_b_a_r_b_a_z&quot;
+stringcase.snakecase('fooBarBaz'); // => &quot;foo_bar_baz&quot;
 stringcase.snakecase('FooBarBaz'); // => &quot;foo_bar_baz&quot;
+
+
+//------------------------
+// Convert to spinalcase
+//------------------------
 stringcase.spinalcase('foo_bar_baz'); // => &quot;foo-bar-baz&quot;
+stringcase.spinalcase('FOO_BAR_BAZ'); // => &quot;f-o-o-b-a-r-b-a-z&quot;
+stringcase.spinalcase('fooBarBaz'); // => &quot;foo-bar-baz&quot;
 stringcase.spinalcase('FooBarBaz'); // => &quot;foo-bar-baz&quot;
+
+
+//------------------------
+// Convert to titlecase
+//------------------------
 stringcase.titlecase('foo_bar_baz'); // => &quot;Foo Bar Baz&quot;
+stringcase.titlecase('FOO_BAR_BAZ'); // => &quot;F O O B A R B A Z&quot;
+stringcase.titlecase('fooBarBaz'); // => &quot;Foo Bar Baz&quot;
 stringcase.titlecase('FooBarBaz'); // => &quot;Foo Bar Baz&quot;
+
+
+//------------------------
+// Convert to trimcase
+//------------------------
 stringcase.trimcase('foo_bar_baz'); // => &quot;foo_bar_baz&quot;
+stringcase.trimcase('FOO_BAR_BAZ'); // => &quot;FOO_BAR_BAZ&quot;
+stringcase.trimcase('fooBarBaz'); // => &quot;fooBarBaz&quot;
 stringcase.trimcase('FooBarBaz'); // => &quot;FooBarBaz&quot;
+
+
+//------------------------
+// Convert to uppercase
+//------------------------
 stringcase.uppercase('foo_bar_baz'); // => &quot;FOO_BAR_BAZ&quot;
+stringcase.uppercase('FOO_BAR_BAZ'); // => &quot;FOO_BAR_BAZ&quot;
+stringcase.uppercase('fooBarBaz'); // => &quot;FOOBARBAZ&quot;
 stringcase.uppercase('FooBarBaz'); // => &quot;FOOBARBAZ&quot;</code></pre><p>Fore more detail, see <a href="http://okunishinishi.github.io/node-stringcase/apiguide/module-stringcase_lib.html">API Guide of stringcase functions</a>.</p>
 <!-- Sections Start -->
 <!-- LICENSE Start -->
