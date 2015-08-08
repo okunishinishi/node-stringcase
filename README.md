@@ -36,6 +36,13 @@ Convert string cases between camel case, pascal case, snake case etc...
 <!-- Sections Start -->
 <a name="sections"></a>
 
+Installation
+-----
+
+```bash
+npm install stringcase --save-dev
+```
+
 Usage
 -------
 
