@@ -20,10 +20,10 @@ module.exports = {
                     return {
                         name: name,
                         samples: [
-                            'foo_bar_baz',
-                            'FOO_BAR_BAZ',
-                            'fooBarBaz',
-                            'FooBarBaz'
+                            'foo_bar',
+                            'FOO_BAR',
+                            'fooBar',
+                            'FooBar'
                         ].map(function (src) {
                                 return {
                                     src: src,
