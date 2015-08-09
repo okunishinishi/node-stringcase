@@ -4,7 +4,7 @@ var stringcase = require('stringcase');
 // Convert to camelcase
 //------------------------
 stringcase.camelcase('foo_bar_baz'); // => "fooBarBaz"
-stringcase.camelcase('FOO_BAR_BAZ'); // => "fOOBARBAZ"
+stringcase.camelcase('FOO_BAR_BAZ'); // => "fooBarBaz"
 stringcase.camelcase('fooBarBaz'); // => "fooBarBaz"
 stringcase.camelcase('FooBarBaz'); // => "fooBarBaz"
 
@@ -22,7 +22,7 @@ stringcase.capitalcase('FooBarBaz'); // => "FooBarBaz"
 // Convert to constcase
 //------------------------
 stringcase.constcase('foo_bar_baz'); // => "FOO_BAR_BAZ"
-stringcase.constcase('FOO_BAR_BAZ'); // => "F_O_O_B_A_R_B_A_Z"
+stringcase.constcase('FOO_BAR_BAZ'); // => "FOO_BAR_BAZ"
 stringcase.constcase('fooBarBaz'); // => "FOO_BAR_BAZ"
 stringcase.constcase('FooBarBaz'); // => "FOO_BAR_BAZ"
 
@@ -49,7 +49,7 @@ stringcase.lowercase('FooBarBaz'); // => "foobarbaz"
 // Convert to pascalcase
 //------------------------
 stringcase.pascalcase('foo_bar_baz'); // => "FooBarBaz"
-stringcase.pascalcase('FOO_BAR_BAZ'); // => "FOOBARBAZ"
+stringcase.pascalcase('FOO_BAR_BAZ'); // => "FooBarBaz"
 stringcase.pascalcase('fooBarBaz'); // => "FooBarBaz"
 stringcase.pascalcase('FooBarBaz'); // => "FooBarBaz"
 
@@ -58,7 +58,7 @@ stringcase.pascalcase('FooBarBaz'); // => "FooBarBaz"
 // Convert to pathcase
 //------------------------
 stringcase.pathcase('foo_bar_baz'); // => "foo/bar/baz"
-stringcase.pathcase('FOO_BAR_BAZ'); // => "f/o/o/b/a/r/b/a/z"
+stringcase.pathcase('FOO_BAR_BAZ'); // => "foo/bar/baz"
 stringcase.pathcase('fooBarBaz'); // => "foo/bar/baz"
 stringcase.pathcase('FooBarBaz'); // => "foo/bar/baz"
 
@@ -76,7 +76,7 @@ stringcase.sentencecase('FooBarBaz'); // => "Foo bar baz"
 // Convert to snakecase
 //------------------------
 stringcase.snakecase('foo_bar_baz'); // => "foo_bar_baz"
-stringcase.snakecase('FOO_BAR_BAZ'); // => "f_o_o_b_a_r_b_a_z"
+stringcase.snakecase('FOO_BAR_BAZ'); // => "foo_bar_baz"
 stringcase.snakecase('fooBarBaz'); // => "foo_bar_baz"
 stringcase.snakecase('FooBarBaz'); // => "foo_bar_baz"
 
@@ -85,7 +85,7 @@ stringcase.snakecase('FooBarBaz'); // => "foo_bar_baz"
 // Convert to spinalcase
 //------------------------
 stringcase.spinalcase('foo_bar_baz'); // => "foo-bar-baz"
-stringcase.spinalcase('FOO_BAR_BAZ'); // => "f-o-o-b-a-r-b-a-z"
+stringcase.spinalcase('FOO_BAR_BAZ'); // => "foo-bar-baz"
 stringcase.spinalcase('fooBarBaz'); // => "foo-bar-baz"
 stringcase.spinalcase('FooBarBaz'); // => "foo-bar-baz"
 
@@ -94,7 +94,7 @@ stringcase.spinalcase('FooBarBaz'); // => "foo-bar-baz"
 // Convert to titlecase
 //------------------------
 stringcase.titlecase('foo_bar_baz'); // => "Foo Bar Baz"
-stringcase.titlecase('FOO_BAR_BAZ'); // => "F O O B A R B A Z"
+stringcase.titlecase('FOO_BAR_BAZ'); // => "Foo Bar Baz"
 stringcase.titlecase('fooBarBaz'); // => "Foo Bar Baz"
 stringcase.titlecase('FooBarBaz'); // => "Foo Bar Baz"
 

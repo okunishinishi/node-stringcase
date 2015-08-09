@@ -11,3 +11,12 @@ exports['Uppercase'] = function (test) {
     test.done();
 };
 
+
+exports['Is uppercase.'] = function (test) {
+    test.equal(uppercase.isUppercase("foo"), false);
+    test.equal(uppercase.isUppercase("fooBar"), false);
+    test.equal(uppercase.isUppercase("FOO"), true);
+    test.equal(uppercase.isUppercase("FOO_BAR"), true);
+    test.done();
+};
+

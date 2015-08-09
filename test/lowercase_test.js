@@ -11,3 +11,10 @@ exports['Lowercase'] = function (test) {
     test.done();
 };
 
+exports['Is lowercase.'] = function (test) {
+    test.equal(lowercase.isLowercase("foo"), true);
+    test.equal(lowercase.isLowercase("fooBar"), false);
+    test.equal(lowercase.isLowercase("FOO"), false);
+    test.equal(lowercase.isLowercase("FOO_BAR"), false);
+    test.done();
+};

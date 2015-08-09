@@ -71,6 +71,18 @@ function uppercase(str) {
     return str.toUpperCase();
 }
 
+/**
+ * Checks whether the string are uppercase.
+ * @memberof module:stringcase/lib
+ * @function uppercase.isUppercase
+ * @param {string} str - String to check
+ * @returns {boolean} - True if the string are uppercase.
+ */
+uppercase.isUppercase = function (str) {
+    return str &amp;&amp; !/[a-z]+/.test(str);
+};
+
+
 module.exports = uppercase;</pre>
 	</article>
 </section>
