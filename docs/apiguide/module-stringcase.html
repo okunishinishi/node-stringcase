@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>stringcase Source: titlecase.js</title>
+	<title>stringcase Module: stringcase</title>
 
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -41,56 +41,101 @@
 <div class="row">
 
 	
-	<div class="col-md-12">
+	<div class="col-md-8">
 	
 		<div id="main">
-    		<h1 class="page-title">Source: titlecase.js</h1>
+    		<h1 class="page-title">Module: stringcase</h1>
 			
 
-		<h1 class="page-title">Source: titlecase.js</h1>
-    
+	<h1 class="page-title">Module: stringcase</h1>
 <section>
-	<article>
-		<pre
-			class="sunlight-highlight-javascript linenums">/**
- * Convert string into sentence case.
- * First letter capped and each punctuations is capitalcase and joined with space.
- * @memberof module:stringcase/lib
- * @function titlecase
- * @param {string} str - String to convert.
- * @returns {string} Title cased string.
- */
 
-"use strict";
-
-var snakecase = require('./snakecase'),
-    lowercase = require('./lowercase'),
-    trimcase = require('./trimcase'),
-    capitalcase = require('./capitalcase');
-
-var LOWERCASE_WORDS = 'a,the,and,or,not,but,for,of'.split(',');
-
-/** @lends titlecase*/
-function titlecase(str) {
-    return snakecase(str).split(/_/g)
-        .map(trimcase)
-        .map(function (word) {
-            var lower = !!~LOWERCASE_WORDS.indexOf(word);
-            if (lower) {
-                return lowercase(word);
-            } else {
-                return capitalcase(word);
-            }
-        }).join(' ');
-}
-
-module.exports = titlecase;
+<header>
+    
+</header>
 
 
-</pre>
-	</article>
+<article>
+    <div class="container-overview">
+    
+        
+            <div class="description"><p>Convert string cases between camel case, pascal case, snake case etc...</p></div>
+        
+
+        
+<dl class="details">
+	
+
+	
+
+	
+
+	
+
+    
+
+    
+
+    
+
+    
+
+	
+
+	
+
+	
+
+	
+
+	
+
+
+
+	
+	<dt class="tag-source">Source:</dt>
+	<dd class="tag-source">
+		<ul class="dummy">
+			<li>
+				<a href="index.js.html">index.js</a>,
+				 <a href="index.js.html#sunlight-1-line-1">line 1</a>
+			</li>
+		</ul>
+	</dd>
+	
+
+	
+
+	
+
+	
+</dl>
+
+
+        
+    
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</article>
+
 </section>
-
 
 
 
@@ -100,6 +145,10 @@ module.exports = titlecase;
 
 	<div class="clearfix"></div>
 
+	
+		<div class="col-md-3">
+			<div id="toc" class="col-md-3"></div>
+		</div>
 	
 
 </div>
