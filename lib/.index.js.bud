@@ -1,12 +1,13 @@
 "use strict";
 
 var coz = require('coz'),
+    pkg = require('../package.json'),
     indexJsBud = coz.factory.indexJsBud;
 
 module.exports = indexJsBud({
     dirname: __dirname,
-    desc: 'String manipulate functions.',
-    module: 'stringcase/lib'
+    desc: pkg.description,
+    module: pkg.name
 });
 
 if (!module.parent) {

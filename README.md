@@ -40,7 +40,7 @@ Installation
 -----
 
 ```bash
-npm install stringcase --save-dev
+npm install stringcase --save
 ```
 
 Usage
