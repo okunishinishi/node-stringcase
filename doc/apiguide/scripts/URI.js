@@ -122,7 +122,7 @@
   // encoding / decoding according to RFC3986
 
   function strictEncodeURIComponent(string) {
-    // see https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/encodeURIComponent
+    // see https://developer.mozilla.org/en-US/doc/JavaScript/Reference/Global_Objects/encodeURIComponent
     return encodeURIComponent(string).replace(/[!'()*]/g, escape).replace(/\*/g, "%2A");
   }
   URI.encode = strictEncodeURIComponent;

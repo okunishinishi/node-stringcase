@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * Generate docs.
+ * Generate doc.
  */
 
 "use strict";
@@ -18,7 +18,7 @@ apeTasking.runTasks('doc', [
             'lib/**/*.js',
             'README.md'
         ], {
-            destination: "docs/apiguide",
+            destination: "doc/apiguide",
             verbose: true,
             templates: {
                 color: '#00AAC1',
