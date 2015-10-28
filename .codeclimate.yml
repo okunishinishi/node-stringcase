@@ -3,4 +3,5 @@ languages:
 exclude_paths:
   - "ci/*.js"
   - "docs/*.js"
+  - "doc/*.js"
   - "test/**/*.js"
