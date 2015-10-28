@@ -11,6 +11,3 @@ script:
 - "./ci/test.js"
 - "./ci/cover.js"
 - "./ci/report.js"
-env:
-  global:
-  - secure: SKOQLHCViU98lKCxbUCZ3z0Ee8A5cRTGAkCqcuaByPT0a6fzMD/cmzkY4I4rG5TA+PWjjkcOswHjLWhmky/x3aBvV1fdRziJEwAtUB7PzBFlFa3EDhkKix5uYKPk9HALkrfzA9QjBy8eT4yHJQFHK5Ghh+eYVElZNmRLqzjz//QBwmXt5MwP/uskscGTNOI/6mVEHFcEIgLKXFlt37DeKM5WVb7k9zhwmbiipVMJ3A7q8AC/I+fN7jqhrXDfr04/NE1ucKXBrVs3/eBbIcgVDYv+yYjWP1dmGXHjCtnxdmb9kHVYkrDaf3wjh4ZwtexxqdAduwVYaPpTcyu4ecIaTUlrqwMFuvCyU6SR+JclQFrqib2Gbrvnajm9yd6/fIvsMihv+uL1djjJKxs0s4xXCPhOI3DVsh3q6+7W9SYMBjM0SCngRbJ/hKBqlXF6xzkdpp6ovAaFp/jJ22BSDriNOsAaeCgIZZD7wUuV1ImJwSf9/L9CA26a/QFOyNSwRQMoAe902CrGJrkPBjDOP6uZhuwSvkU+lReubnTF9oIpM27xz1K6eTUy+kQV4SRE3iRulD7lAXV8KGVi1jmjwdVER8NRNMvvr2PCzqUELLC0E5QgXOim/8Dy3VQxwAQyZri9VlywasJ26thC+wQCx3b7e5xBpeTm4BVDlbOLc0m9hV4=

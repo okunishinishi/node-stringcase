@@ -82,6 +82,15 @@ stringcase.snakecase('FooBar'); // => "foo_bar"
 
 
 //------------------------
+// Convert to spacecase
+//------------------------
+stringcase.spacecase('foo_bar'); // => "foo bar"
+stringcase.spacecase('FOO_BAR'); // => "foo bar"
+stringcase.spacecase('fooBar'); // => "foo bar"
+stringcase.spacecase('FooBar'); // => "foo bar"
+
+
+//------------------------
 // Convert to spinalcase
 //------------------------
 stringcase.spinalcase('foo_bar'); // => "foo-bar"
