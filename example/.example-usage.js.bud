@@ -4,7 +4,7 @@
 
 "use strict";
 
-var stringcase = require('../../lib');
+var stringcase = require('../lib');
 
 module.exports = {
     force: true,
