@@ -8,12 +8,12 @@
 
 process.chdir(__dirname + '/..');
 
-var apeTasking = require('ape-tasking'),
+const apeTasking = require('ape-tasking'),
     apeReleasing = require('ape-releasing');
 
 
 apeTasking.runTasks('release', [
-    function (callback) {
+    (callback) => {
         apeReleasing.releasePackage({
             beforeRelease: [
                 './ci/build.js',

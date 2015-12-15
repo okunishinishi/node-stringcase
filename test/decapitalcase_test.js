@@ -1,14 +1,19 @@
 /**
  * Test case for decapitalcase.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
+"use strict";
 
-var decapitalcase = require('../lib/decapitalcase.js');
+const decapitalcase = require('../lib/decapitalcase.js'),
+    assert = require('assert');
 
-exports['Decapitalcase'] = function(test){
-    test.equal(decapitalcase(""), "");
-    test.equal(decapitalcase('FooBar'), 'fooBar');
-    test.equal(decapitalcase('fooBar'), 'fooBar');
-    test.done();
-};
+describe('decapital', () => {
+
+    it('Decapitalcase', (done) => {
+        assert.equal(decapitalcase(""), "");
+        assert.equal(decapitalcase('FooBar'), 'fooBar');
+        assert.equal(decapitalcase('fooBar'), 'fooBar');
+        done();
+    });
+});
 

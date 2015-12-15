@@ -1,20 +1,24 @@
 /**
  * Test case for lowercase.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
+"use strict";
 
-var lowercase = require('../lib/lowercase.js');
+const lowercase = require('../lib/lowercase.js'),
+    assert = require('assert');
 
-exports['Lowercase'] = function (test) {
-    test.equal(lowercase(""), "");
-    test.equal(lowercase("Foo"), "foo");
-    test.done();
-};
+describe('lowercase', () => {
+    it('Lowercase', (done) => {
+        assert.equal(lowercase(""), "");
+        assert.equal(lowercase("Foo"), "foo");
+        done();
+    });
 
-exports['Is lowercase.'] = function (test) {
-    test.equal(lowercase.isLowercase("foo"), true);
-    test.equal(lowercase.isLowercase("fooBar"), false);
-    test.equal(lowercase.isLowercase("FOO"), false);
-    test.equal(lowercase.isLowercase("FOO_BAR"), false);
-    test.done();
-};
+    it('Is lowercase.', (done) => {
+        assert.equal(lowercase.isLowercase("foo"), true);
+        assert.equal(lowercase.isLowercase("fooBar"), false);
+        assert.equal(lowercase.isLowercase("FOO"), false);
+        assert.equal(lowercase.isLowercase("FOO_BAR"), false);
+        done();
+    });
+});

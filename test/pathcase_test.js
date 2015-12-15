@@ -1,20 +1,24 @@
 /**
  * Test case for module:stringcase/lib.pathcase.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
+"use strict";
 
-var pathcase = require('../lib/pathcase.js');
+const pathcase = require('../lib/pathcase.js'),
+    assert = require('assert');
 
-exports['Pathcase'] = function (test) {
-    test.equal(pathcase('fooBar'), 'foo/bar');
-    test.equal(pathcase('foo_bar'), 'foo/bar');
-    test.equal(pathcase('foo-bar'), 'foo/bar');
-    test.equal(pathcase('foo.bar'), 'foo/bar');
-    test.equal(pathcase('_bar_baz'), '/bar/baz');
-    test.equal(pathcase('.bar_baz'), '/bar/baz');
-    test.equal(pathcase(''), '');
-    test.strictEqual(pathcase(null), 'null');
-    test.strictEqual(pathcase(undefined), 'undefined');
-    test.done();
-};
+describe('pathcase', () => {
+    it('Pathcase', (done) => {
+        assert.equal(pathcase('fooBar'), 'foo/bar');
+        assert.equal(pathcase('foo_bar'), 'foo/bar');
+        assert.equal(pathcase('foo-bar'), 'foo/bar');
+        assert.equal(pathcase('foo.bar'), 'foo/bar');
+        assert.equal(pathcase('_bar_baz'), '/bar/baz');
+        assert.equal(pathcase('.bar_baz'), '/bar/baz');
+        assert.equal(pathcase(''), '');
+        assert.strictEqual(pathcase(null), 'null');
+        assert.strictEqual(pathcase(undefined), 'undefined');
+        done();
+    });
+});
 

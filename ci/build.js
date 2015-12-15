@@ -4,14 +4,15 @@
 
 process.chdir(__dirname + '/..');
 
-var apeTasking = require('ape-tasking'),
+const apeTasking = require('ape-tasking'),
     coz = require('coz');
 
 apeTasking.runTasks('build', [
-    function (callback) {
+    (callback) => {
         coz.render([
             '.*.bud',
-            'docs/**/.*.bud',
+            'doc/**/.*.bud',
+            'example/**/.*.bud',
             'lib/.*.bud',
             'test/.*.bud'
         ], callback);

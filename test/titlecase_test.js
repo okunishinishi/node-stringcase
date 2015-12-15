@@ -1,24 +1,25 @@
 /**
  * Test case for module:stringcase/lib/string.titlecase
- * Runs with nodeunit
+ * Runs with mocha
  */
 
 "use strict";
 
-var titlecase = require('../lib/titlecase.js');
+const titlecase = require('../lib/titlecase.js'),
+    assert = require('assert');
 
-
-exports['Convert to camel case.'] = function (test) {
-    test.equal(titlecase('fooBar'), 'Foo Bar');
-    test.equal(titlecase('foo_bar'), 'Foo Bar');
-    test.equal(titlecase('foo_for_bar'), 'Foo for Bar');
-    test.equal(titlecase('foo-bar'), 'Foo Bar');
-    test.equal(titlecase('foo.bar'), 'Foo Bar');
-    test.equal(titlecase('_bar_baz'), ' Bar Baz');
-    test.equal(titlecase('.bar_baz'), ' Bar Baz');
-    test.equal(titlecase(''), '');
-    test.strictEqual(titlecase(null), 'Null');
-    test.strictEqual(titlecase(undefined), 'Undefined');
-    test.done();
-
-};
+describe('titlecase', () => {
+    it('Convert to camel case.', (done) => {
+        assert.equal(titlecase('fooBar'), 'Foo Bar');
+        assert.equal(titlecase('foo_bar'), 'Foo Bar');
+        assert.equal(titlecase('foo_for_bar'), 'Foo for Bar');
+        assert.equal(titlecase('foo-bar'), 'Foo Bar');
+        assert.equal(titlecase('foo.bar'), 'Foo Bar');
+        assert.equal(titlecase('_bar_baz'), ' Bar Baz');
+        assert.equal(titlecase('.bar_baz'), ' Bar Baz');
+        assert.equal(titlecase(''), '');
+        assert.strictEqual(titlecase(null), 'Null');
+        assert.strictEqual(titlecase(undefined), 'Undefined');
+        done();
+    });
+});

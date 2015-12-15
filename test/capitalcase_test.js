@@ -1,17 +1,19 @@
 /**
  * Test case for module:stringcase/lib/string.capitalcase
- * Runs with nodeunit
+ * Runs with mocha
  */
 
 "use strict";
 
-var capitalcase = require('../lib/capitalcase.js');
+const capitalcase = require('../lib/capitalcase.js'),
+    assert = require('assert');
 
+describe('captialcase', () => {
+    it('Convert to camel case.', (done) => {
+        assert.equal(capitalcase(""), "");
+        assert.equal(capitalcase('FooBar'), 'FooBar');
+        assert.equal(capitalcase('fooBar'), 'FooBar');
+        done();
 
-exports['Convert to camel case.'] = function (test) {
-    test.equal(capitalcase(""), "");
-    test.equal(capitalcase('FooBar'), 'FooBar');
-    test.equal(capitalcase('fooBar'), 'FooBar');
-    test.done();
-
-};
+    });
+});

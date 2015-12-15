@@ -1,13 +1,17 @@
 /**
  * Test case for trimcase.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
+"use strict";
 
-var trimcase = require('../lib/trimcase.js');
+const trimcase = require('../lib/trimcase.js'),
+    assert = require('assert');
 
-exports['Trimcase'] = function(test){
-    test.equal(trimcase(' foo bar baz '), 'foo bar baz');
-    test.equal(trimcase(''), '');
-    test.done();
-};
+describe('trimcae', () => {
+    it('Trimcase', (done) => {
+        assert.equal(trimcase(' foo bar baz '), 'foo bar baz');
+        assert.equal(trimcase(''), '');
+        done();
+    });
+});
 

@@ -1,22 +1,23 @@
 /**
  * Test case for module:stringcase/lib/string.pascalcase
- * Runs with nodeunit
+ * Runs with mocha
  */
 
 "use strict";
 
-var pascalcase = require('../lib/pascalcase.js');
+const pascalcase = require('../lib/pascalcase.js'),
+    assert = require('assert');
 
-
-exports['Convert to pascal case.'] = function (test) {
-    test.equal(pascalcase('foo_bar'), 'FooBar');
-    test.equal(pascalcase('foo-bar'), 'FooBar');
-    test.equal(pascalcase('foo.bar'), 'FooBar');
-    test.equal(pascalcase('_bar_baz'), 'BarBaz');
-    test.equal(pascalcase('.bar_baz'), 'BarBaz');
-    test.equal(pascalcase(''), '');
-    test.strictEqual(pascalcase(null), 'Null');
-    test.strictEqual(pascalcase(undefined), 'Undefined');
-    test.done();
-
-};
+describe('pascalcase', () => {
+    it('Convert to pascal case.', (done) => {
+        assert.equal(pascalcase('foo_bar'), 'FooBar');
+        assert.equal(pascalcase('foo-bar'), 'FooBar');
+        assert.equal(pascalcase('foo.bar'), 'FooBar');
+        assert.equal(pascalcase('_bar_baz'), 'BarBaz');
+        assert.equal(pascalcase('.bar_baz'), 'BarBaz');
+        assert.equal(pascalcase(''), '');
+        assert.strictEqual(pascalcase(null), 'Null');
+        assert.strictEqual(pascalcase(undefined), 'Undefined');
+        done();
+    });
+});

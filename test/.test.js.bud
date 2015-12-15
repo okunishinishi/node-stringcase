@@ -1,12 +1,12 @@
 /**
- * Bud file for test.
+ * Bud file for assert.
  */
 
 "use strict";
 
-var cozTmpl = require('coz-tmpl');
+const apeTmpl = require('ape-tmpl');
 
-module.exports = cozTmpl.nodeunitTestJsBud({
+module.exports = apeTmpl.mochaTestJsBud({
     src: [
         __dirname + '/../lib/*.js'
     ],

@@ -1,22 +1,26 @@
 /**
  * Test case for uppercase.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
+"use strict";
 
-var uppercase = require('../lib/uppercase.js');
+const uppercase = require('../lib/uppercase.js'),
+    assert = require('assert');
 
-exports['Uppercase'] = function (test) {
-    test.equal(uppercase(""), "");
-    test.equal(uppercase("foo"), "FOO");
-    test.done();
-};
+describe('uppercase', () => {
+    it('Uppercase', (done) => {
+        assert.equal(uppercase(""), "");
+        assert.equal(uppercase("foo"), "FOO");
+        done();
+    });
 
 
-exports['Is uppercase.'] = function (test) {
-    test.equal(uppercase.isUppercase("foo"), false);
-    test.equal(uppercase.isUppercase("fooBar"), false);
-    test.equal(uppercase.isUppercase("FOO"), true);
-    test.equal(uppercase.isUppercase("FOO_BAR"), true);
-    test.done();
-};
+    it('Is uppercase.', (done) => {
+        assert.equal(uppercase.isUppercase("foo"), false);
+        assert.equal(uppercase.isUppercase("fooBar"), false);
+        assert.equal(uppercase.isUppercase("FOO"), true);
+        assert.equal(uppercase.isUppercase("FOO_BAR"), true);
+        done();
+    });
+});
 

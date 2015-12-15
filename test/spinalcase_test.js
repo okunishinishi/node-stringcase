@@ -1,23 +1,24 @@
 /**
  * Test case for module:stringcase/lib/string.spinalcase
- * Runs with nodeunit
+ * Runs with mocha
  */
 
 "use strict";
 
-var spinalcase = require('../lib/spinalcase.js');
+const spinalcase = require('../lib/spinalcase.js'),
+    assert = require('assert');
 
-
-exports['Convert to camel case.'] = function (test) {
-    test.equal(spinalcase('fooBar'), 'foo-bar');
-    test.equal(spinalcase('foo_bar'), 'foo-bar');
-    test.equal(spinalcase('foo-bar'), 'foo-bar');
-    test.equal(spinalcase('foo.bar'), 'foo-bar');
-    test.equal(spinalcase('_bar_baz'), '-bar-baz');
-    test.equal(spinalcase('.bar_baz'), '-bar-baz');
-    test.equal(spinalcase(''), '');
-    test.strictEqual(spinalcase(null), 'null');
-    test.strictEqual(spinalcase(undefined), 'undefined');
-    test.done();
-
-};
+describe('spinalcase', () => {
+    it('Convert to camel case.', (done) => {
+        assert.equal(spinalcase('fooBar'), 'foo-bar');
+        assert.equal(spinalcase('foo_bar'), 'foo-bar');
+        assert.equal(spinalcase('foo-bar'), 'foo-bar');
+        assert.equal(spinalcase('foo.bar'), 'foo-bar');
+        assert.equal(spinalcase('_bar_baz'), '-bar-baz');
+        assert.equal(spinalcase('.bar_baz'), '-bar-baz');
+        assert.equal(spinalcase(''), '');
+        assert.strictEqual(spinalcase(null), 'null');
+        assert.strictEqual(spinalcase(undefined), 'undefined');
+        done();
+    });
+});

@@ -1,28 +1,32 @@
 /**
  * Test case for module:stringcase/lib/string.constcase.
- * Runs with nodeunit.
+ * Runs with mocha.
  */
+"use strict";
 
-var constcase = require('../lib/constcase.js');
+const constcase = require('../lib/constcase.js'),
+    assert = require('assert');
 
-exports['Constcase'] = function (test) {
-    test.equal(constcase('FOO_BAR'), 'FOO_BAR');
-    test.equal(constcase('fooBar'), 'FOO_BAR');
-    test.equal(constcase('foo_bar'), 'FOO_BAR');
-    test.equal(constcase('foo-bar'), 'FOO_BAR');
-    test.equal(constcase('foo.bar'), 'FOO_BAR');
-    test.equal(constcase('_bar_baz'), '_BAR_BAZ');
-    test.equal(constcase('.bar_baz'), '_BAR_BAZ');
-    test.equal(constcase(''), '');
-    test.strictEqual(constcase(null), 'NULL');
-    test.strictEqual(constcase(undefined), 'UNDEFINED');
-    test.done();
-};
+describe('constcase', () => {
+    it('Constcase', (done) => {
+        assert.equal(constcase('FOO_BAR'), 'FOO_BAR');
+        assert.equal(constcase('fooBar'), 'FOO_BAR');
+        assert.equal(constcase('foo_bar'), 'FOO_BAR');
+        assert.equal(constcase('foo-bar'), 'FOO_BAR');
+        assert.equal(constcase('foo.bar'), 'FOO_BAR');
+        assert.equal(constcase('_bar_baz'), '_BAR_BAZ');
+        assert.equal(constcase('.bar_baz'), '_BAR_BAZ');
+        assert.equal(constcase(''), '');
+        assert.strictEqual(constcase(null), 'NULL');
+        assert.strictEqual(constcase(undefined), 'UNDEFINED');
+        done();
+    });
 
-exports['Is constcase.'] = function (test) {
-    test.equal(constcase.isConstcase('foo'), false);
-    test.equal(constcase.isConstcase('foo_bar'), false);
-    test.equal(constcase.isConstcase('fooBar'), false);
-    test.equal(constcase.isConstcase('FOO_BAR'), true);
-    test.done();
-};
+    it('Is constcase.', (done) => {
+        assert.equal(constcase.isConstcase('foo'), false);
+        assert.equal(constcase.isConstcase('foo_bar'), false);
+        assert.equal(constcase.isConstcase('fooBar'), false);
+        assert.equal(constcase.isConstcase('FOO_BAR'), true);
+        done();
+    });
+});

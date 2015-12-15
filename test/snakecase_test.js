@@ -1,34 +1,37 @@
 /**
  * Test case for module:stringcase/lib/string.snakecase
- * Runs with nodeunit
+ * Runs with mocha
  */
 
 "use strict";
 
-var snakecase = require('../lib/snakecase.js');
+const snakecase = require('../lib/snakecase.js'),
+    assert = require('assert');
 
 
-exports['Convert to camel case.'] = function (test) {
-    test.equal(snakecase('FooBar'), 'foo_bar');
-    test.equal(snakecase('FOO_BAR'), 'foo_bar');
-    test.equal(snakecase('fooBar'), 'foo_bar');
-    test.equal(snakecase('foo_bar'), 'foo_bar');
-    test.equal(snakecase('foo-bar'), 'foo_bar');
-    test.equal(snakecase('foo.bar'), 'foo_bar');
-    test.equal(snakecase('_bar_baz'), '_bar_baz');
-    test.equal(snakecase('.bar_baz'), '_bar_baz');
-    test.equal(snakecase(''), '');
-    test.strictEqual(snakecase(null), 'null');
-    test.strictEqual(snakecase(undefined), 'undefined');
-    test.done();
+describe('snakecase', () => {
+    it('Convert to camel case.', (done) => {
+        assert.equal(snakecase('FooBar'), 'foo_bar');
+        assert.equal(snakecase('FOO_BAR'), 'foo_bar');
+        assert.equal(snakecase('fooBar'), 'foo_bar');
+        assert.equal(snakecase('foo_bar'), 'foo_bar');
+        assert.equal(snakecase('foo-bar'), 'foo_bar');
+        assert.equal(snakecase('foo.bar'), 'foo_bar');
+        assert.equal(snakecase('_bar_baz'), '_bar_baz');
+        assert.equal(snakecase('.bar_baz'), '_bar_baz');
+        assert.equal(snakecase(''), '');
+        assert.strictEqual(snakecase(null), 'null');
+        assert.strictEqual(snakecase(undefined), 'undefined');
+        done();
 
-};
+    });
 
 
-exports['Check snakecase or not.'] = function (test) {
-    test.equal(snakecase.isSnakecase('foo'), true);
-    test.equal(snakecase.isSnakecase('foo_bar'), true);
-    test.equal(snakecase.isSnakecase('fooBar'), false);
-    test.equal(snakecase.isSnakecase('FOO_BAR'), false);
-    test.done();
-};
+    it('Check snakecase or not.', (done) => {
+        assert.equal(snakecase.isSnakecase('foo'), true);
+        assert.equal(snakecase.isSnakecase('foo_bar'), true);
+        assert.equal(snakecase.isSnakecase('fooBar'), false);
+        assert.equal(snakecase.isSnakecase('FOO_BAR'), false);
+        done();
+    });
+});

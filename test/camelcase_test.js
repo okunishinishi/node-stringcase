@@ -1,25 +1,26 @@
 /**
  * Test case for module:stringcase/lib/string.camelcase
- * Runs with nodeunit
+ * Runs with mocha
  */
 
 "use strict";
 
-var camelcase = require('../lib/camelcase.js');
+const camelcase = require('../lib/camelcase.js'),
+    assert = require('assert');
 
-
-exports['Convert to camel case.'] = function (test) {
-    test.equal(camelcase('FOO'), 'foo');
-    test.equal(camelcase('FOO_BAR'), 'fooBar');
-    test.equal(camelcase('FooBar'), 'fooBar');
-    test.equal(camelcase('foo_bar'), 'fooBar');
-    test.equal(camelcase('foo-bar'), 'fooBar');
-    test.equal(camelcase('foo.bar'), 'fooBar');
-    test.equal(camelcase('_bar_baz'), 'barBaz');
-    test.equal(camelcase('.bar_baz'), 'barBaz');
-    test.equal(camelcase(''), '');
-    test.strictEqual(camelcase(null), 'null');
-    test.strictEqual(camelcase(undefined), 'undefined');
-    test.done();
-
-};
+describe('camelcase', () => {
+    it('Convert to camel case.', (done) => {
+        assert.equal(camelcase('FOO'), 'foo');
+        assert.equal(camelcase('FOO_BAR'), 'fooBar');
+        assert.equal(camelcase('FooBar'), 'fooBar');
+        assert.equal(camelcase('foo_bar'), 'fooBar');
+        assert.equal(camelcase('foo-bar'), 'fooBar');
+        assert.equal(camelcase('foo.bar'), 'fooBar');
+        assert.equal(camelcase('_bar_baz'), 'barBaz');
+        assert.equal(camelcase('.bar_baz'), 'barBaz');
+        assert.equal(camelcase(''), '');
+        assert.strictEqual(camelcase(null), 'null');
+        assert.strictEqual(camelcase(undefined), 'undefined');
+        done();
+    });
+});

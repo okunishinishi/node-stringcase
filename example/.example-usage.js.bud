@@ -4,7 +4,7 @@
 
 "use strict";
 
-var stringcase = require('../../lib');
+const stringcase = require('../lib');
 
 module.exports = {
     force: true,
@@ -12,10 +12,10 @@ module.exports = {
     data: {
         get usages() {
             return Object.keys(stringcase)
-                .filter(function (name) {
+                .filter((name) => {
                     return /case$/.test(name);
                 })
-                .map(function (name) {
+                .map((name) => {
                     var convert = stringcase[name];
                     return {
                         name: name,
@@ -24,13 +24,13 @@ module.exports = {
                             'FOO_BAR',
                             'fooBar',
                             'FooBar'
-                        ].map(function (src) {
-                                return {
-                                    src: src,
-                                    converted: convert(src)
+                        ].map((src) => {
+                            return {
+                                src: src,
+                                converted: convert(src)
 
-                                }
-                            })
+                            }
+                        })
                     }
                 });
         }
