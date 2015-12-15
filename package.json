@@ -34,5 +34,8 @@
     "ape-updating": "^2.0.0",
     "apiguide": "^1.0.10",
     "coz": "^3.1.6"
+  },
+  "engines": {
+    "node": ">=4.0"
   }
 }
