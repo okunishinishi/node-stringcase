@@ -1,6 +1,6 @@
 {
   "name": "stringcase",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Convert string cases between camel case, pascal case, snake case etc...",
   "main": "lib",
   "scripts": {
