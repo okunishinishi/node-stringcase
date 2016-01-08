@@ -101,6 +101,15 @@ stringcase.decapitalcase('FooBar'); // => "fooBar"
 
 
 //------------------------
+// Convert to enumcase
+//------------------------
+stringcase.enumcase('foo_bar'); // => "foo:bar"
+stringcase.enumcase('FOO_BAR'); // => "foo:bar"
+stringcase.enumcase('fooBar'); // => "foo:bar"
+stringcase.enumcase('FooBar'); // => "foo:bar"
+
+
+//------------------------
 // Convert to lowercase
 //------------------------
 stringcase.lowercase('foo_bar'); // => "foo_bar"
