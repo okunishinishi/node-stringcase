@@ -24,18 +24,19 @@
   },
   "homepage": "https://github.com/okunishinishi/node-stringcase#readme",
   "devDependencies": {
-    "ape-covering": "^2.0.0",
-    "ape-deploying": "^2.0.0",
+    "ape-covering": "^2.0.2",
+    "ape-deploying": "^3.0.0",
     "ape-releasing": "^2.0.0",
     "ape-reporting": "^2.0.3",
-    "ape-tasking": "^2.0.0",
+    "ape-tasking": "^2.0.1",
     "ape-testing": "^2.0.0",
     "ape-tmpl": "^2.0.5",
-    "ape-updating": "^2.0.0",
+    "ape-updating": "^2.0.2",
     "apiguide": "^1.0.10",
     "coz": "^3.1.6"
   },
   "engines": {
     "node": ">=4.0"
-  }
+  },
+  "dependencies": {}
 }
