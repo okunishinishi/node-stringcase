@@ -12,5 +12,3 @@ script:
 - "./ci/cover.js"
 - "./ci/report.js"
 
-
-browser
