@@ -1,14 +1,14 @@
-"use strict";
+'use strict'
 
-const apeTmpl = require('ape-tmpl'),
-    pkg = require('../package.json');
+const apeTmpl = require('ape-tmpl')
+const pkg = require('../package.json')
 
 module.exports = apeTmpl.indexJsBud({
-    dirname: __dirname,
-    desc: pkg.description,
-    module: pkg.name
-});
+  dirname: __dirname,
+  desc: pkg.description,
+  module: pkg.name
+})
 
 if (!module.parent) {
-    require('coz').render(__filename);
+  require('coz').render(__filename)
 }

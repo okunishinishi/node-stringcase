@@ -3,17 +3,18 @@
  * Runs with mocha
  */
 
-"use strict";
+'use strict'
 
-const capitalcase = require('../lib/capitalcase.js'),
-    assert = require('assert');
+const capitalcase = require('../lib/capitalcase.js')
+const assert = require('assert')
 
 describe('captialcase', () => {
-    it('Convert to camel case.', (done) => {
-        assert.equal(capitalcase(""), "");
-        assert.equal(capitalcase('FooBar'), 'FooBar');
-        assert.equal(capitalcase('fooBar'), 'FooBar');
-        done();
+  it('Convert to camel case.', (done) => {
+    assert.equal(capitalcase(''), '')
+    assert.equal(capitalcase('FooBar'), 'FooBar')
+    assert.equal(capitalcase('fooBar'), 'FooBar')
+    done()
+  })
+})
 
-    });
-});
+/* global describe, it */

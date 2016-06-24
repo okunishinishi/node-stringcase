@@ -1,14 +1,16 @@
 language: node_js
 node_js:
-- '4.0'
+- '6'
 before_install:
-- npm install mocha istanbul -g
+- npm install istanbul mocha babel-cli browserify -g
+- npm install babel-preset-es2015
 install:
 - npm install
-before_script:
-- npm link .
 script:
 - "./ci/build.js"
 - "./ci/test.js"
 - "./ci/cover.js"
 - "./ci/report.js"
+
+
+browser

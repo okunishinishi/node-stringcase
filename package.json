@@ -1,10 +1,12 @@
 {
   "name": "stringcase",
-  "version": "2.0.2",
+  "version": "3.0.0",
   "description": "Convert string cases between camel case, pascal case, snake case etc...",
   "main": "lib",
+  "browser": "browser",
   "scripts": {
-    "test": "./ci/test.js"
+    "test": "./ci/test.js",
+    "prepublish": "./ci/build.js && ./ci/browser.js"
   },
   "repository": "okunishinishi/node-stringcase",
   "keywords": [
@@ -23,20 +25,21 @@
     "url": "https://github.com/okunishinishi/node-stringcase/issues"
   },
   "homepage": "https://github.com/okunishinishi/node-stringcase#readme",
+  "dependencies": {},
   "devDependencies": {
-    "ape-covering": "^2.0.2",
-    "ape-deploying": "^3.0.0",
-    "ape-releasing": "^2.0.0",
-    "ape-reporting": "^2.0.3",
-    "ape-tasking": "^2.0.1",
-    "ape-testing": "^2.0.0",
-    "ape-tmpl": "^2.0.5",
-    "ape-updating": "^2.0.2",
-    "apiguide": "^1.0.10",
-    "coz": "^3.1.6"
+    "ape-covering": "^3.0.3",
+    "ape-deploying": "^4.0.2",
+    "ape-releasing": "^3.1.1",
+    "ape-reporting": "^3.0.1",
+    "ape-tasking": "^4.0.1",
+    "ape-testing": "^4.0.0",
+    "ape-tmpl": "^5.0.2",
+    "ape-updating": "^3.0.2",
+    "apiguide": "^3.0.0",
+    "coz": "^6.0.2"
   },
   "engines": {
-    "node": ">=4.0"
-  },
-  "dependencies": {}
+    "node": ">=6",
+    "npm": ">=3"
+  }
 }

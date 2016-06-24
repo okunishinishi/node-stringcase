@@ -2,17 +2,17 @@
  * Bud file for assert.
  */
 
-"use strict";
+'use strict'
 
-const apeTmpl = require('ape-tmpl');
+const apeTmpl = require('ape-tmpl')
 
 module.exports = apeTmpl.mochaTestJsBud({
-    src: [
-        __dirname + '/../lib/*.js'
-    ],
-    dest: __dirname
-});
+  src: [
+    __dirname + '/../lib/*.js'
+  ],
+  dest: __dirname
+})
 
 if (!module.parent) {
-    require('coz').render(__filename);
+  require('coz').render(__filename)
 }
