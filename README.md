@@ -49,6 +49,7 @@ Convert string cases between camel case, pascal case, snake case etc...
 <!-- Section from "doc/guides/01.Installation.md.hbs" Start -->
 
 <a name="section-doc-guides-01-installation-md"></a>
+
 Installation
 -----
 
@@ -62,6 +63,7 @@ npm install stringcase --save
 <!-- Section from "doc/guides/02.Usage.md.hbs" Start -->
 
 <a name="section-doc-guides-02-usage-md"></a>
+
 Usage
 -------
 

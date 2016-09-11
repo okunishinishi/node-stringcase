@@ -6,11 +6,11 @@
 
 'use strict'
 
-process.chdir(__dirname + '/..')
+process.chdir(`${__dirname}/..`)
 
-const apeTasking = require('ape-tasking')
-const apeUpdating = require('ape-updating')
+const { runTasks } = require('ape-tasking')
+const { updateDependencies } = require('ape-updating')
 
-apeTasking.runTasks('update', [
-  () => apeUpdating.updateDependencies({})
+runTasks('update', [
+  () => updateDependencies({})
 ], true)

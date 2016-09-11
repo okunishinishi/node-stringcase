@@ -30,3 +30,6 @@ node_modules
 .idea
 .DS_Store
 
+
+!shim/browser
+!shim/node

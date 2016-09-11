@@ -6,13 +6,11 @@
 
 'use strict'
 
-process.chdir(__dirname + '/..')
+process.chdir(`${__dirname}/..`)
 
-const apeTasking = require('ape-tasking'),
-    apeReporting = require('ape-reporting')
+const { runTasks } = require('ape-tasking')
+const { sendToCodeclimate } = require('ape-reporting')
 
-apeTasking.runTasks([
-    (callback) => {
-        apeReporting.sendToCodeclimate('coverage/lcov.info', callback)
-    }
+runTasks('report', [
+  () => sendToCodeclimate('coverage/lcov.info', {})
 ], true)

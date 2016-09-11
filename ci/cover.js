@@ -1,20 +1,18 @@
 #!/usr/bin/env node
 
 /**
- * Measure coverage.
+ * Measure test coverage.
  */
 
 'use strict'
 
 process.chdir(`${__dirname}/..`)
 
-const apeTasking = require('ape-tasking')
-const apeCovering = require('ape-covering')
+const { runTasks } = require('ape-tasking')
+const { coverage } = require('amocha')
 
-apeTasking.runTasks('cover', [
-  () => apeCovering.measureCoverage('_mocha', [
-    'test/*_test.js'
-  ], {
+runTasks('cover', [
+  () => coverage('test/*_test.js', {
     dir: 'coverage'
   })
 ], true)

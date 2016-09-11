@@ -2,11 +2,11 @@
   "name": "stringcase",
   "version": "3.0.2",
   "description": "Convert string cases between camel case, pascal case, snake case etc...",
-  "main": "lib",
-  "browser": "browser",
+  "main": "shim/node",
+  "browser": "shim/browser",
   "scripts": {
-    "test": "./ci/test.js",
-    "prepublish": "./ci/build.js && ./ci/browser.js"
+    "test": "node ./ci/test.js",
+    "prepublish": "node ./ci/build.js && node ./ci/shim.js"
   },
   "repository": "okunishinishi/node-stringcase",
   "keywords": [
@@ -27,21 +27,20 @@
   "homepage": "https://github.com/okunishinishi/node-stringcase#readme",
   "dependencies": {},
   "devDependencies": {
-    "ape-compiling": "^4.3.0",
-    "ape-covering": "^3.0.3",
-    "ape-deploying": "^4.0.2",
-    "ape-releasing": "^3.1.1",
-    "ape-reporting": "^3.0.1",
-    "ape-tasking": "^4.0.1",
-    "ape-testing": "^4.0.0",
-    "ape-tmpl": "^5.0.2",
-    "ape-updating": "^3.0.2",
-    "apiguide": "^3.0.0",
-    "coz": "^6.0.2",
-    "filedel": "^2.0.1"
+    "ababel": "^1.1.3",
+    "ababel-es2015": "^1.0.6",
+    "amocha": "^1.0.14",
+    "ape-releasing": "^4.0.4",
+    "ape-reporting": "^3.0.2",
+    "ape-tasking": "^4.0.8",
+    "ape-testing": "^4.0.2",
+    "ape-tmpl": "^5.0.16",
+    "ape-updating": "^4.0.5",
+    "coz": "^6.0.17",
+    "filedel": "^2.0.4"
   },
   "engines": {
-    "node": ">=6",
-    "npm": ">=3"
+    "node": ">=4",
+    "npm": ">=2"
   }
 }
