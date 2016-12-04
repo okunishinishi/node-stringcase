@@ -1,6 +1,6 @@
 {
   "name": "stringcase",
-  "version": "3.1.2",
+  "version": "3.2.0",
   "description": "Convert string cases between camel case, pascal case, snake case etc...",
   "main": "shim/node",
   "browser": "shim/browser",
@@ -27,17 +27,17 @@
   "homepage": "https://github.com/okunishinishi/node-stringcase#readme",
   "dependencies": {},
   "devDependencies": {
-    "ababel": "^1.1.3",
-    "ababel-es2015": "^1.0.6",
-    "amocha": "^1.0.14",
+    "ababel": "^1.1.12",
+    "ababel-es2015": "^1.0.8",
+    "amocha": "^1.0.16",
     "ape-releasing": "^4.0.4",
     "ape-reporting": "^3.0.2",
-    "ape-tasking": "^4.0.8",
+    "ape-tasking": "^4.0.9",
     "ape-testing": "^4.0.2",
-    "ape-tmpl": "^5.0.16",
+    "ape-tmpl": "^5.0.20",
     "ape-updating": "^4.0.5",
-    "coz": "^6.0.17",
-    "filedel": "^2.0.4"
+    "coz": "^6.0.20",
+    "filedel": "^2.0.5"
   },
   "engines": {
     "node": ">=4",

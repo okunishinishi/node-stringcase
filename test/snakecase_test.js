@@ -9,7 +9,7 @@ const snakecase = require('../lib/snakecase.js')
 const assert = require('assert')
 
 describe('snakecase', () => {
-  it('Convert to camel case.', (done) => {
+  it('Convert to snake case.', (done) => {
     assert.equal(snakecase('FooBar'), 'foo_bar')
     assert.equal(snakecase('FOO_BAR'), 'foo_bar')
     assert.equal(snakecase('fooBar'), 'foo_bar')
@@ -22,7 +22,6 @@ describe('snakecase', () => {
     assert.strictEqual(snakecase(null), 'null')
     assert.strictEqual(snakecase(undefined), 'undefined')
     done()
-
   })
 
   it('Check snakecase or not.', (done) => {
