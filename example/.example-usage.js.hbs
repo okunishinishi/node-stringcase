@@ -1,11 +1,18 @@
-var stringcase = require('stringcase');
+'use strict'
 
+const {
 {{#each usages}}
-//------------------------
-// Convert to {{name}}
-//------------------------
-{{#each samples}}stringcase.{{../name}}('{{src}}'); // => "{{converted}}"
+  {{name}}{{#if @last}}{{else}},
+{{/if}}
 {{/each}}
 
+} = require('stringcase')
+
+{{#each usages}}
+// ------------------------
+// Convert to {{name}}
+// ------------------------
+{{#each samples}}{{../name}}('{{src}}') // => "{{converted}}"
+{{/each}}
 
 {{/each}}

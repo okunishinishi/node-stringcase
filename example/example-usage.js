@@ -1,137 +1,149 @@
-var stringcase = require('stringcase');
+'use strict'
 
-//------------------------
+const {
+  camelcase,
+  capitalcase,
+  constcase,
+  cramcase,
+  decapitalcase,
+  enumcase,
+  lowercase,
+  pascalcase,
+  pathcase,
+  sentencecase,
+  snakecase,
+  spacecase,
+  spinalcase,
+  titlecase,
+  trimcase,
+  uppercase
+} = require('stringcase')
+
+// ------------------------
 // Convert to camelcase
-//------------------------
-stringcase.camelcase('foo_bar'); // => "fooBar"
-stringcase.camelcase('FOO_BAR'); // => "fooBar"
-stringcase.camelcase('fooBar'); // => "fooBar"
-stringcase.camelcase('FooBar'); // => "fooBar"
+// ------------------------
+camelcase('foo_bar') // => "fooBar"
+camelcase('FOO_BAR') // => "fooBar"
+camelcase('fooBar') // => "fooBar"
+camelcase('FooBar') // => "fooBar"
 
-
-//------------------------
+// ------------------------
 // Convert to capitalcase
-//------------------------
-stringcase.capitalcase('foo_bar'); // => "Foo_bar"
-stringcase.capitalcase('FOO_BAR'); // => "FOO_BAR"
-stringcase.capitalcase('fooBar'); // => "FooBar"
-stringcase.capitalcase('FooBar'); // => "FooBar"
+// ------------------------
+capitalcase('foo_bar') // => "Foo_bar"
+capitalcase('FOO_BAR') // => "FOO_BAR"
+capitalcase('fooBar') // => "FooBar"
+capitalcase('FooBar') // => "FooBar"
 
-
-//------------------------
+// ------------------------
 // Convert to constcase
-//------------------------
-stringcase.constcase('foo_bar'); // => "FOO_BAR"
-stringcase.constcase('FOO_BAR'); // => "FOO_BAR"
-stringcase.constcase('fooBar'); // => "FOO_BAR"
-stringcase.constcase('FooBar'); // => "FOO_BAR"
+// ------------------------
+constcase('foo_bar') // => "FOO_BAR"
+constcase('FOO_BAR') // => "FOO_BAR"
+constcase('fooBar') // => "FOO_BAR"
+constcase('FooBar') // => "FOO_BAR"
 
+// ------------------------
+// Convert to cramcase
+// ------------------------
+cramcase('foo_bar') // => "foobar"
+cramcase('FOO_BAR') // => "foobar"
+cramcase('fooBar') // => "foobar"
+cramcase('FooBar') // => "foobar"
 
-//------------------------
+// ------------------------
 // Convert to decapitalcase
-//------------------------
-stringcase.decapitalcase('foo_bar'); // => "foo_bar"
-stringcase.decapitalcase('FOO_BAR'); // => "fOO_BAR"
-stringcase.decapitalcase('fooBar'); // => "fooBar"
-stringcase.decapitalcase('FooBar'); // => "fooBar"
+// ------------------------
+decapitalcase('foo_bar') // => "foo_bar"
+decapitalcase('FOO_BAR') // => "fOO_BAR"
+decapitalcase('fooBar') // => "fooBar"
+decapitalcase('FooBar') // => "fooBar"
 
-
-//------------------------
+// ------------------------
 // Convert to enumcase
-//------------------------
-stringcase.enumcase('foo_bar'); // => "foo:bar"
-stringcase.enumcase('FOO_BAR'); // => "foo:bar"
-stringcase.enumcase('fooBar'); // => "foo:bar"
-stringcase.enumcase('FooBar'); // => "foo:bar"
+// ------------------------
+enumcase('foo_bar') // => "foo:bar"
+enumcase('FOO_BAR') // => "foo:bar"
+enumcase('fooBar') // => "foo:bar"
+enumcase('FooBar') // => "foo:bar"
 
-
-//------------------------
+// ------------------------
 // Convert to lowercase
-//------------------------
-stringcase.lowercase('foo_bar'); // => "foo_bar"
-stringcase.lowercase('FOO_BAR'); // => "foo_bar"
-stringcase.lowercase('fooBar'); // => "foobar"
-stringcase.lowercase('FooBar'); // => "foobar"
+// ------------------------
+lowercase('foo_bar') // => "foo_bar"
+lowercase('FOO_BAR') // => "foo_bar"
+lowercase('fooBar') // => "foobar"
+lowercase('FooBar') // => "foobar"
 
-
-//------------------------
+// ------------------------
 // Convert to pascalcase
-//------------------------
-stringcase.pascalcase('foo_bar'); // => "FooBar"
-stringcase.pascalcase('FOO_BAR'); // => "FooBar"
-stringcase.pascalcase('fooBar'); // => "FooBar"
-stringcase.pascalcase('FooBar'); // => "FooBar"
+// ------------------------
+pascalcase('foo_bar') // => "FooBar"
+pascalcase('FOO_BAR') // => "FooBar"
+pascalcase('fooBar') // => "FooBar"
+pascalcase('FooBar') // => "FooBar"
 
-
-//------------------------
+// ------------------------
 // Convert to pathcase
-//------------------------
-stringcase.pathcase('foo_bar'); // => "foo/bar"
-stringcase.pathcase('FOO_BAR'); // => "foo/bar"
-stringcase.pathcase('fooBar'); // => "foo/bar"
-stringcase.pathcase('FooBar'); // => "foo/bar"
+// ------------------------
+pathcase('foo_bar') // => "foo/bar"
+pathcase('FOO_BAR') // => "foo/bar"
+pathcase('fooBar') // => "foo/bar"
+pathcase('FooBar') // => "foo/bar"
 
-
-//------------------------
+// ------------------------
 // Convert to sentencecase
-//------------------------
-stringcase.sentencecase('foo_bar'); // => "Foo bar"
-stringcase.sentencecase('FOO_BAR'); // => "Foo bar"
-stringcase.sentencecase('fooBar'); // => "Foo bar"
-stringcase.sentencecase('FooBar'); // => "Foo bar"
+// ------------------------
+sentencecase('foo_bar') // => "Foo bar"
+sentencecase('FOO_BAR') // => "Foo bar"
+sentencecase('fooBar') // => "Foo bar"
+sentencecase('FooBar') // => "Foo bar"
 
-
-//------------------------
+// ------------------------
 // Convert to snakecase
-//------------------------
-stringcase.snakecase('foo_bar'); // => "foo_bar"
-stringcase.snakecase('FOO_BAR'); // => "foo_bar"
-stringcase.snakecase('fooBar'); // => "foo_bar"
-stringcase.snakecase('FooBar'); // => "foo_bar"
+// ------------------------
+snakecase('foo_bar') // => "foo_bar"
+snakecase('FOO_BAR') // => "foo_bar"
+snakecase('fooBar') // => "foo_bar"
+snakecase('FooBar') // => "foo_bar"
 
-
-//------------------------
+// ------------------------
 // Convert to spacecase
-//------------------------
-stringcase.spacecase('foo_bar'); // => "foo bar"
-stringcase.spacecase('FOO_BAR'); // => "foo bar"
-stringcase.spacecase('fooBar'); // => "foo bar"
-stringcase.spacecase('FooBar'); // => "foo bar"
+// ------------------------
+spacecase('foo_bar') // => "foo bar"
+spacecase('FOO_BAR') // => "foo bar"
+spacecase('fooBar') // => "foo bar"
+spacecase('FooBar') // => "foo bar"
 
-
-//------------------------
+// ------------------------
 // Convert to spinalcase
-//------------------------
-stringcase.spinalcase('foo_bar'); // => "foo-bar"
-stringcase.spinalcase('FOO_BAR'); // => "foo-bar"
-stringcase.spinalcase('fooBar'); // => "foo-bar"
-stringcase.spinalcase('FooBar'); // => "foo-bar"
+// ------------------------
+spinalcase('foo_bar') // => "foo-bar"
+spinalcase('FOO_BAR') // => "foo-bar"
+spinalcase('fooBar') // => "foo-bar"
+spinalcase('FooBar') // => "foo-bar"
 
-
-//------------------------
+// ------------------------
 // Convert to titlecase
-//------------------------
-stringcase.titlecase('foo_bar'); // => "Foo Bar"
-stringcase.titlecase('FOO_BAR'); // => "Foo Bar"
-stringcase.titlecase('fooBar'); // => "Foo Bar"
-stringcase.titlecase('FooBar'); // => "Foo Bar"
+// ------------------------
+titlecase('foo_bar') // => "Foo Bar"
+titlecase('FOO_BAR') // => "Foo Bar"
+titlecase('fooBar') // => "Foo Bar"
+titlecase('FooBar') // => "Foo Bar"
 
-
-//------------------------
+// ------------------------
 // Convert to trimcase
-//------------------------
-stringcase.trimcase('foo_bar'); // => "foo_bar"
-stringcase.trimcase('FOO_BAR'); // => "FOO_BAR"
-stringcase.trimcase('fooBar'); // => "fooBar"
-stringcase.trimcase('FooBar'); // => "FooBar"
+// ------------------------
+trimcase('foo_bar') // => "foo_bar"
+trimcase('FOO_BAR') // => "FOO_BAR"
+trimcase('fooBar') // => "fooBar"
+trimcase('FooBar') // => "FooBar"
 
-
-//------------------------
+// ------------------------
 // Convert to uppercase
-//------------------------
-stringcase.uppercase('foo_bar'); // => "FOO_BAR"
-stringcase.uppercase('FOO_BAR'); // => "FOO_BAR"
-stringcase.uppercase('fooBar'); // => "FOOBAR"
-stringcase.uppercase('FooBar'); // => "FOOBAR"
-
+// ------------------------
+uppercase('foo_bar') // => "FOO_BAR"
+uppercase('FOO_BAR') // => "FOO_BAR"
+uppercase('fooBar') // => "FOOBAR"
+uppercase('FooBar') // => "FOOBAR"
 

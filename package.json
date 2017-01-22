@@ -1,6 +1,6 @@
 {
   "name": "stringcase",
-  "version": "3.2.1",
+  "version": "3.2.2",
   "description": "Convert string cases between camel case, pascal case, snake case etc...",
   "main": "shim/node",
   "browser": "shim/browser",
@@ -35,7 +35,7 @@
     "ape-tasking": "^4.0.9",
     "ape-testing": "^4.0.2",
     "ape-tmpl": "^5.0.20",
-    "ape-updating": "^4.0.5",
+    "ape-updating": "^4.1.0",
     "coz": "^6.0.20",
     "filedel": "^2.0.5"
   },
