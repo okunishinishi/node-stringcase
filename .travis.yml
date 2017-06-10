@@ -1,12 +1,10 @@
 language: node_js
 node_js:
-- '6'
-before_install:
-- npm install istanbul mocha babel-cli browserify -g
-- npm install babel-preset-es2015
+- '7'
 install:
 - npm install
 script:
+- "./ci/shim.js"
 - "./ci/build.js"
 - "./ci/test.js"
 
