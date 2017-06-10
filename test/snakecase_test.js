@@ -10,6 +10,7 @@ const assert = require('assert')
 
 describe('snakecase', () => {
   it('Convert to snake case.', (done) => {
+    assert.equal(snakecase('DDFooBar'), 'dd_foo_bar')
     assert.equal(snakecase('FooBar'), 'foo_bar')
     assert.equal(snakecase('FOO_BAR'), 'foo_bar')
     assert.equal(snakecase('fooBar'), 'foo_bar')
