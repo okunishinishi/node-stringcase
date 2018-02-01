@@ -74,6 +74,7 @@ const {
   constcase,
   cramcase,
   decapitalcase,
+  dotcase,
   enumcase,
   lowercase,
   pascalcase,
@@ -126,6 +127,14 @@ decapitalcase('foo_bar') // => "foo_bar"
 decapitalcase('FOO_BAR') // => "fOO_BAR"
 decapitalcase('fooBar') // => "fooBar"
 decapitalcase('FooBar') // => "fooBar"
+
+// ------------------------
+// Convert to dotcase
+// ------------------------
+dotcase('foo_bar') // => "foo.bar"
+dotcase('FOO_BAR') // => "foo.bar"
+dotcase('fooBar') // => "foo.bar"
+dotcase('FooBar') // => "foo.bar"
 
 // ------------------------
 // Convert to enumcase

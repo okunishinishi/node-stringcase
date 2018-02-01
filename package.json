@@ -1,46 +1,43 @@
 {
   "name": "stringcase",
-  "version": "4.1.1",
   "description": "Convert string cases between camel case, pascal case, snake case etc...",
-  "main": "shim/node",
-  "browser": "shim/browser",
-  "scripts": {
-    "test": "node ./ci/test.js",
-    "prepare": "node ./ci/build.js && node ./ci/shim.js"
-  },
-  "repository": "okunishinishi/node-stringcase",
-  "keywords": [
-    "string",
-    "case",
-    "camel",
-    "pascal",
-    "snake"
-  ],
+  "version": "4.1.2",
   "author": {
     "name": "Taka Okunishi",
     "url": "http://okunishitaka.com"
   },
-  "license": "MIT",
+  "browser": "shim/browser",
   "bugs": {
     "url": "https://github.com/okunishinishi/node-stringcase/issues"
   },
-  "homepage": "https://github.com/okunishinishi/node-stringcase#readme",
   "dependencies": {},
   "devDependencies": {
-    "ababel": "^2.0.3",
-    "ababel-es2015": "^2.0.2",
-    "amocha": "^4.0.0",
+    "ababel": "^4.0.6",
+    "amocha": "^5.0.0",
     "ape-releasing": "^4.0.4",
     "ape-tasking": "^4.0.9",
-    "ape-tmpl": "^6.0.6",
+    "ape-tmpl": "^6.0.8",
     "ape-updating": "^4.1.1",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-es2015": "^6.24.1",
     "coz": "^6.0.20",
     "filedel": "^4.0.0"
   },
   "engines": {
     "node": ">=7.6",
     "npm": ">=4"
+  },
+  "homepage": "https://github.com/okunishinishi/node-stringcase#readme",
+  "keywords": [
+    "camel",
+    "case",
+    "pascal",
+    "snake",
+    "string"
+  ],
+  "license": "MIT",
+  "main": "shim/node",
+  "repository": "okunishinishi/node-stringcase",
+  "scripts": {
+    "prepare": "node ./ci/build.js && node ./ci/shim.js",
+    "test": "node ./ci/test.js"
   }
 }
