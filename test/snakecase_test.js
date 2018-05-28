@@ -22,6 +22,11 @@ describe('snakecase', () => {
     assert.equal(snakecase(''), '')
     assert.strictEqual(snakecase(null), 'null')
     assert.strictEqual(snakecase(undefined), 'undefined')
+    assert.equal(snakecase('FOO-Bar'), 'foo_bar')
+    assert.equal(snakecase('FOO-BAR'), 'foo_bar')
+    assert.equal(snakecase('FOO_Bar'), 'foo_bar')
+    assert.equal(snakecase('FOO_BAR'), 'foo_bar')
+    assert.equal(snakecase('FOOBar'), 'foo_bar')
     done()
   })
 
