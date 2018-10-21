@@ -35,6 +35,7 @@
   ],
   "license": "MIT",
   "main": "lib",
+  "types": "stringcase.d.ts",
   "repository": "okunishinishi/node-stringcase",
   "scripts": {
     "prepare": "node ./ci/build.js && node ./ci/shim.js",
