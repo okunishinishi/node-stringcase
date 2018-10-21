@@ -1,7 +1,7 @@
 {
   "name": "stringcase",
   "description": "Convert string cases between camel case, pascal case, snake case etc...",
-  "version": "4.2.1",
+  "version": "4.3.0",
   "author": {
     "name": "Taka Okunishi",
     "url": "http://okunishitaka.com"
@@ -12,13 +12,13 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "ababel": "^4.0.6",
+    "ababel": "^5.0.6",
     "amocha": "^5.0.0",
     "ape-releasing": "^4.0.4",
     "ape-tasking": "^4.0.9",
-    "ape-tmpl": "^6.0.8",
-    "ape-updating": "^4.1.1",
-    "coz": "^6.0.20",
+    "ape-tmpl": "^6.0.11",
+    "ape-updating": "^5.0.1",
+    "coz": "^7.0.2",
     "filedel": "^4.0.0"
   },
   "engines": {
