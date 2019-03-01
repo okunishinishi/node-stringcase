@@ -6,18 +6,9 @@
 
 const cramcase = require('../lib/cramcase.js')
 const assert = require('assert')
-const co = require('co')
 
 describe('cramcase', function () {
   this.timeout(3000)
-
-  before(() => co(function * () {
-
-  }))
-
-  after(() => co(function * () {
-
-  }))
 
   it('Convert to cram case.', (done) => {
     assert.equal(cramcase('FooBar'), 'foobar')
